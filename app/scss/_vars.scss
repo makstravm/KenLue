@@ -3,16 +3,6 @@ $default: #8d8d8d;
 $title: #29282d;
 $bg: #f6f6f6;
 
-%quicksand-400 {
-  font-family: "Quicksand", sans-serif;
-  font-weight: 400;
-}
-
-%quicksand-500 {
-  font-family: "Quicksand", sans-serif;
-  font-weight: 500;
-}
-
 %roboto-400 {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -45,7 +35,6 @@ $bg: #f6f6f6;
   clip: rect(0 0 0 0);
   position: absolute;
 }
-
 
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});

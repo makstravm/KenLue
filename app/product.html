@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Marcho</title>
+  <title>KenLue</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -12,34 +12,67 @@
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        <a class="logo" href="#"><img class="logo__img" src="images/logo.png" alt="logo"></a>
+        <a class="logo" href="index.html">
+          <img class="logo__img" src="images/logo.svg" alt="logo">
+        </a>
         <nav class="menu">
           <button class="menu__btn"><span></span></button>
           <ul class="menu__list">
             <li class="menu__list-item">
-              <a class="menu__list-link menu__list-link--active" href="#">HOME</a>
+              <a class="menu__list-link " href="index.html">Главная</a>
+            </li>
+            <li class="menu__list-item menu__list-item--catalog">
+              <a class="menu__list-link menu__list-link--active" href="shop.html">Каталог</a>
+              <ul class="menu__list-catalog">
+                <li class="menu__catalog-list">
+                  <a class="menu__catalog-link" href="shop.html">
+                    Женская мода
+                  </a>
+                </li>
+                <li class="menu__catalog-list">
+                  <a class="menu__catalog-link" href="shop.html">
+                    Мужская мода
+                  </a>
+                </li>
+                <li class="menu__catalog-list">
+                  <a class="menu__catalog-link" href="shop.html">
+                    Одежда & аксессуары
+                  </a>
+                </li>
+                <li class="menu__catalog-list">
+                  <a class="menu__catalog-link" href="shop.html">
+                    Обувь & украшения
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">SHOP</a>
+              <a class="menu__list-link" href="blog.html">
+                Блог
+              </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">PAGE</a>
+              <a class="menu__list-link" href="#">
+                О нас
+              </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">BLOG</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">CONTACT</a>
+              <a class="menu__list-link" href="contacts.html">
+                Контакты
+              </a>
             </li>
           </ul>
         </nav>
         <div class="user-nav">
-          <a class="user-nav__link" href="#">
+          <a class="user-nav__link" href="login.html">
             <img class="user-nav__link-img" src="images/icons/user.svg" alt="user icon">
           </a>
-          <a class="user-nav__link" href="#">
+          <span class="user-nav__link user-nav__link-search">
             <img class="user-nav__link-img" src="images/icons/search.svg" alt="user icon">
-          </a>
+            <form class="user-nav__form" action="#">
+                <input class="user-nav__input" type="text" placeholder="Поиск товаров.....">
+            </form>
+          </span>
           <a class="user-nav__link" href="#">
             <img class="user-nav__link-img" src="images/icons/heart.svg" alt="user icon">
             <span class="user-nav__num">3</span>
@@ -61,10 +94,10 @@
           <div class="breadcrumbs">
             <ul class="breadcrumbs__list">
               <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="#">Home</a>
+                <a class="breadcrumbs__link" href="index.html">Home</a>
               </li>
               <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="#">SHOP PAGE</a>
+                <a class="breadcrumbs__link" href="shop.html">SHOP PAGE</a>
               </li>
             </ul>
           </div>
@@ -511,11 +544,10 @@
       <div class="footer-top">
         <div class="footer-top__contact">
           <a class="logo footer-top__logo" href="#">
-            <img class="logo__img" src="images/logo.png" alt="logo">
+            <img class="logo__img" src="images/logo.svg" alt="logo">
           </a>
-          <a class="footer-top__address" href="#">No. 342 - London Oxford Street,
-            012 United States</a>
-          <a class="footer-top__eamil" href="mailto:Youremail@gmail.com"> Youremail@gmail.com</a>
+          <a class="footer-top__address" href="https://goo.gl/maps/Ajxt13G4KwZj3Kq77" target="_blank">вул.Челюскінців, 189E, Донецьк, Донецька область, 83048</a>
+          <a class="footer-top__eamil" href="mailto:Youremail@gmail.com"> kenlue@gmail.com</a>
           <a class="footer-top__phone" href="tel:+02838388393"> +0283 838 8393</a>
           <ul class="footer-top__social-list">
             <li class="footer-top__social-item">
@@ -567,59 +599,62 @@
           </ul>
         </div>
         <div class="footer-top__nav">
-          <h6 class="footer-top__title">Useful Links</h6>
+          <h6 class="footer-top__title">Cсылки</h6>
           <ul class="footer-top__list">
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">About Us</a>
+              <a class="footer-top__link" href="#">
+                О нас</a>
             </li>
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Privacy Policy</a>
+              <a class="footer-top__link" href="#">
+                Политика конфиденциальности</a>
             </li>
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Terms & Conditions</a>
+              <a class="footer-top__link" href="#">
+                Условия и положения</a>
             </li>
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Contact Us</a>
+              <a class="footer-top__link" href="#">Связаться с нами</a>
             </li>
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Help & Support</a>
+              <a class="footer-top__link" href="#">Помощь и поддержка</a>
             </li>
           </ul>
         </div>
         <div class="footer-top__nav">
-          <h6 class="footer-top__title">My Account</h6>
+          <h6 class="footer-top__title">Мой аккаунт</h6>
           <ul class="footer-top__list">
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">My Account</a>
+              <a class="footer-top__link" href="#">Мой аккаунт</a>
             </li>
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">My Cart</a>
+              <a class="footer-top__link" href="#">Моя корзина</a>
             </li>
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">My WIshlist</a>
+              <a class="footer-top__link" href="#">
+                Список моих желаний</a>
             </li>
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Registration</a>
+              <a class="footer-top__link" href="#">Hегистрация</a>
             </li>
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Check Out</a>
+              <a class="footer-top__link" href="#">Оплатить</a>
             </li>
           </ul>
         </div>
         <div class="footer-top__forms">
-          <h6 class="footer-top__title">Subscribe Our Newsletter</h6>
+          <h6 class="footer-top__title">Подпишитесь на нашу рассылку новостей</h6>
           <p class="footer-top__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+            Будьте в курсі наших акцій, підпишіться на розсилку.</p>
           <form class="footer-top__form" action="#">
-            <input class="footer-top__form-input" type="email" placeholder="Your email address" required>
-            <button class="footer-top__form-btn" type="submit">Subscribe</button>
+            <input class="footer-top__form-input" type="email" placeholder="Ваш адрес электронной почты" required>
+            <button class="footer-top__form-btn" type="submit">Подписатся</button>
           </form>
         </div>
       </div>
       <div class="footer-bottom">
         <p class="footer-bottom__copy">
-          © 2019 CodeAstrology. All Rights Reserved.
+          © 2021 CodeAstrology. All Rights Reserved.
         </p>
         <div class="footer-bottom__accept">
           We Accept
@@ -629,7 +664,6 @@
         </div>
       </div>
     </div>
-
   </footer>
 
 

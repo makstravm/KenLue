@@ -28,6 +28,8 @@
     color: $title;
     padding: 0 2px 1px;
     transition: all 0.3s;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
     @extend %roboto-400;
     &:hover {
       color: $accent;
@@ -38,7 +40,46 @@
   &__list-link--active {
     color: $accent;
     border-bottom: 1px solid $accent;
-    @extend %roboto-700;
+    font-weight: 700;
+  }
+  &__list-item--catalog {
+    position: relative;
+    &:hover {
+      .menu__list-catalog {
+        top: 25px;
+        pointer-events: auto;
+        opacity: 1;
+      }
+    }
+  }
+  .menu__list-catalog {
+    position: absolute;
+    top: 55px;
+    left: 25px;
+    background-color: #fff;
+    width: 300px;
+    padding: 10px 25px;
+    box-shadow: 0px 7px 20px 0px rgba(192, 192, 192, 0.3);
+    transition: all 0.3s;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 10;
+  }
+  &__catalog-link {
+    color: $title;
+    padding: 0 2px 1px;
+    transition: all 0.3s;
+    font-size: 16px;
+    padding: 5px 0;
+    border-bottom: 1px solid transparent;
+    @extend %roboto-400;
+    &:hover {
+      color: $accent;
+      border-bottom: 1px solid $accent;
+    }
+  }
+  .menu__catalog-list {
+    margin: 10px 0;
   }
 }
 
@@ -62,6 +103,44 @@
     color: #ffffff;
     line-height: 20px;
     text-align: center;
+  }
+  &__link-search {
+    position: relative;
+    cursor: pointer;
+    &:hover .user-nav__form {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  &__form {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: 10;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 4px;
+      top: -15px;
+      width: 10px;
+      border: 10px solid transparent;
+      border-bottom: 10px solid #fff;
+      height: 10px;
+    }
+  }
+  &__input {
+    padding: 5px 10px;
+    border: none;
+    color: $title;
+    width: 250px;
+    border-bottom: 1px solid $title;
+    box-shadow: 0px 7px 20px 0px rgba(192, 192, 192, 0.3);
+    &::placeholder {
+      font-size: 14px;
+    }
   }
 }
 
@@ -317,7 +396,12 @@ footer {
     padding-top: 35px;
     padding-left: 40px;
     &:nth-child(1) {
-      grid-row: span 2;
+      grid-column: span 2;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 0;
       .categories__item-subtitle,
       .categories__link:hover {
         color: #5800e4;
@@ -325,12 +409,7 @@ footer {
       }
     }
     &:nth-child(2) {
-      grid-column: span 2;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: flex-start;
-      padding-top: 0;
+      grid-row: span 2;
       .categories__item-subtitle,
       .categories__link:hover {
         color: $accent;
@@ -391,6 +470,36 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+  }
+
+  &__play {
+    position: relative;
+    text-align: center;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    &:hover::after,
+    &:hover::before {
+      animation-play-state: paused;
+    }
+  }
+  &__play::after,
+  &__play::before {
+    content: "";
+    position: absolute;
+    border: 10px solid $accent;
+    left: -20px;
+    opacity: 0;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border-radius: 50%;
+    animation: pulse 1.5s linear infinite;
+    animation-play-state: running;
+    z-index: 2;
+  }
+  &__play::after {
+    animation-delay: 0.4s;
   }
   &__content {
     max-width: 570px;
@@ -721,11 +830,12 @@ footer {
       }
     }
   }
-  &__item-imglink {
+  &__item-img-link {
     display: block;
     & img {
       object-fit: cover;
       height: 288px;
+      width: 100%;
     }
   }
   &__item-box {
@@ -1118,7 +1228,7 @@ footer {
   background: transparent;
   box-shadow: none;
   color: $default;
-  @extend %quicksand-500;
+  @extend %roboto-500;
   text-shadow: none;
   &:hover {
     background: transparent;
@@ -1219,7 +1329,7 @@ footer {
   background: none;
   font-size: 16px;
   text-align: center;
-  @extend %quicksand-500;
+  @extend %roboto-500;
   color: $title;
 }
 .jq-number {
@@ -1984,4 +2094,5 @@ footer {
     cursor: pointer;
   }
 }
+
 @import "media";
