@@ -1341,33 +1341,34 @@ footer {
   cursor: pointer;
   width: 12px;
   height: 12px;
-
   border: none;
-  top: 50%;
-  transform: translateY(-50%);
+  padding: 25px 20px;
+  top: 0;
+
   &::after {
     content: "";
     position: absolute;
-    top: 6px;
-    left: 0;
+    top: 50%;
+    left: 50%;
     background-color: $title;
     width: 12px;
     height: 1px;
+    transform: translate(-50%, -50%);
   }
 }
 .jq-number__spin.minus {
-  left: 15px;
+  left: 0;
 }
 .jq-number__spin.plus {
-  right: 15px;
+  right: 0;
   &::before {
     content: "";
     position: absolute;
-    top: 0px;
-    left: 6px;
+    top: 50%;
+    left: 50%;
     background-color: $title;
     width: 1px;
-    height: 12px;
+    height: 12px; transform: translate(-50%, -50%);
   }
 }
 
@@ -1537,6 +1538,9 @@ footer {
     border-radius: 50%;
     overflow: hidden;
     object-fit: cover;
+    path {
+      fill: #ececec;
+    }
   }
   &__content-top {
     display: flex;
@@ -1697,6 +1701,7 @@ footer {
     max-width: 770px;
     height: 450px;
     object-fit: cover;
+    width: 100%;
   }
   &__item-box {
     border: 1px solid #ececec;
@@ -1860,11 +1865,25 @@ footer {
     border-top: none;
     padding: 30px;
     margin-top: -1px;
+    margin-bottom: 35px;
     h4 {
       @extend %roboto-500;
       font-size: 22px;
       color: $title;
       margin: 25px 0;
+    }
+    h5 {
+      @extend %roboto-500;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: $title;
+      margin: 15px 0;
+    }
+    ul {
+      list-style: none;
+    }
+    ol{
+      padding-left: 60px;
     }
     p {
       margin: 25px 0;
