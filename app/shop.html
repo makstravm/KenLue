@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Marcho</title>
+  <title>KenLue</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -12,34 +12,67 @@
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        <a class="logo" href="#"><img class="logo__img" src="images/logo.png" alt="logo"></a>
+        <a class="logo" href="index.html">
+          <img class="logo__img" src="images/logo.svg" alt="logo">
+        </a>
         <nav class="menu">
           <button class="menu__btn"><span></span></button>
           <ul class="menu__list">
             <li class="menu__list-item">
-              <a class="menu__list-link menu__list-link--active" href="#">HOME</a>
+              <a class="menu__list-link " href="index.html">Главная</a>
+            </li>
+            <li class="menu__list-item menu__list-item--catalog">
+              <a class="menu__list-link menu__list-link--active" href="shop.html">Каталог</a>
+              <ul class="menu__list-catalog">
+                <li class="menu__catalog-list">
+                  <a class="menu__catalog-link" href="shop.html">
+                    Женская мода
+                  </a>
+                </li>
+                <li class="menu__catalog-list">
+                  <a class="menu__catalog-link" href="shop.html">
+                    Мужская мода
+                  </a>
+                </li>
+                <li class="menu__catalog-list">
+                  <a class="menu__catalog-link" href="shop.html">
+                    Одежда & аксессуары
+                  </a>
+                </li>
+                <li class="menu__catalog-list">
+                  <a class="menu__catalog-link" href="shop.html">
+                    Обувь & украшения
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">SHOP</a>
+              <a class="menu__list-link" href="blog.html">
+                Блог
+              </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">PAGE</a>
+              <a class="menu__list-link" href="#">
+                О нас
+              </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">BLOG</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">CONTACT</a>
+              <a class="menu__list-link" href="contacts.html">
+                Контакты
+              </a>
             </li>
           </ul>
         </nav>
         <div class="user-nav">
-          <a class="user-nav__link" href="#">
+          <a class="user-nav__link" href="login.html">
             <img class="user-nav__link-img" src="images/icons/user.svg" alt="user icon">
           </a>
-          <a class="user-nav__link" href="#">
+          <span class="user-nav__link user-nav__link-search">
             <img class="user-nav__link-img" src="images/icons/search.svg" alt="user icon">
-          </a>
+            <form class="user-nav__form" action="#">
+              <input class="user-nav__input" type="text" placeholder="Поиск товаров.....">
+            </form>
+          </span>
           <a class="user-nav__link" href="#">
             <img class="user-nav__link-img" src="images/icons/heart.svg" alt="user icon">
             <span class="user-nav__num">3</span>
@@ -57,21 +90,20 @@
     <section class="top">
       <div class="top__container" style="background-image: url('images/top-bg.jpg')">
         <div class="container">
-          <h2 class="top-title title">SHOP PAGE</h2>
+          <h2 class="top-title title">Каталог</h2>
           <div class="breadcrumbs">
             <ul class="breadcrumbs__list">
               <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="#">Home</a>
+                <a class="breadcrumbs__link" href="index.html">Главная</a>
               </li>
               <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="#">Shop page</a>
+                <a class="breadcrumbs__link" href="shop.html">Каталог</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </section>
-
     <section class="shop">
       <div class="container">
         <div class="shop__inner">
@@ -79,92 +111,86 @@
             <img src="images/icons/filter.svg" alt="filter icon">
           </button>
           <div class="shop__filters filter">
-
             <div class="filter-search filter__item">
               <h3 class=" filter__title">
-                Search
+                Поиск
               </h3>
               <form class="filter-search__form" action="#">
-                <input class="filter-search__input" type="text" placeholder="Search your keyword....">
+                <input class="filter-search__input" type="text" placeholder="Введите ключевое слово....">
                 <button class="filter-search__btn" type="submit"><img src="images/icons/search-white.svg"
                     alt="search icon"></button>
               </form>
             </div>
-
             <div class="filter__item filter-price">
               <h3 class=" filter__title">
-                Price Filter
+                Фильтр по цене
               </h3>
               <form class="filter-price__form" action="#">
-                <input class="filter-price__input" type="text" data-min="0" data-max="999" data-from="200" data-to="800"
-                  data-grid="false">
+                <input class="filter-price__input" type="text" data-min="0" data-max="2999" data-from="700"
+                  data-to="2400" data-grid="false">
                 <div class="filter-price__label">
                   <span>
-                    Price:
-                    $<span class="filter-price__from"></span>-
-                    $<span class="filter-price__to"></span>
+                    Цена:
+                    &#8372;<span class="filter-price__from"></span>-
+                    &#8372;<span class="filter-price__to"></span>
                   </span>
                   </span>
-                  <button class="filter-price__btn" type="submit">Filter</button>
+                  <button class="filter-price__btn" type="submit">Фильтр</button>
                 </div>
               </form>
             </div>
-
             <div class="filter__item filter-color">
               <h3 class=" filter__title">
-                Color Filter
+                Фильтр по цвету
               </h3>
               <form class="filter-color__form" action="#">
                 <label class="filter-color__label">
-                  <span class="filter-color__text">Blue (15)</span>
+                  <span class="filter-color__text">Синий (15)</span>
                   <div class="filter-color__box">
                     <input class="filter-color__input" type="checkbox">
                     <span class="filter-color__checkbox filter-color__checkbox--blue"></span>
                   </div>
                 </label>
                 <label class="filter-color__label">
-                  <span class="filter-color__text">Red (09)</span>
+                  <span class="filter-color__text">Красный (09)</span>
                   <div class="filter-color__box">
                     <input class="filter-color__input" type="checkbox">
                     <span class="filter-color__checkbox filter-color__checkbox--red"></span>
                   </div>
                 </label>
                 <label class="filter-color__label">
-                  <span class="filter-color__text">Green (28)</span>
+                  <span class="filter-color__text">Зеленый (28)</span>
                   <div class="filter-color__box">
                     <input class="filter-color__input" type="checkbox">
                     <span class="filter-color__checkbox filter-color__checkbox--green"></span>
                   </div>
                 </label>
                 <label class="filter-color__label">
-                  <span class="filter-color__text">Orange (11)</span>
+                  <span class="filter-color__text">Оранжевый (11)</span>
                   <div class="filter-color__box">
                     <input class="filter-color__input" type="checkbox">
                     <span class="filter-color__checkbox filter-color__checkbox--orange"></span>
                   </div>
                 </label>
                 <label class="filter-color__label">
-                  <span class="filter-color__text">Black (05)</span>
+                  <span class="filter-color__text">Черный (05)</span>
                   <div class="filter-color__box">
                     <input class="filter-color__input" type="checkbox">
                     <span class="filter-color__checkbox filter-color__checkbox--black"></span>
                   </div>
                 </label>
                 <label class="filter-color__label">
-                  <span class="filter-color__text">Purple (21)</span>
+                  <span class="filter-color__text">Пурпурный (21)</span>
                   <div class="filter-color__box">
                     <input class="filter-color__input" type="checkbox">
                     <span class="filter-color__checkbox filter-color__checkbox--purple"></span>
                   </div>
                 </label>
-
-
               </form>
             </div>
-
             <div class="filter__item filter-size">
               <h3 class=" filter__title">
-                Size Filter
+                Фильтр по размеру
               </h3>
               <form class="filter-size__form" action="#">
                 <label class="filter-size__label">
@@ -192,15 +218,11 @@
                   <span class="filter-size__checkbox"></span>
                   <span class="filter-size__text"> XXL</span>
                 </label>
-
-
               </form>
-
             </div>
-
             <div class="filter__item filter-category">
               <h3 class="filter__title">
-                CATEGORY
+                КАТЕГОРИИ
               </h3>
               <form class="filter-category__form" action="#">
                 <label class="filter-category__label">
@@ -247,57 +269,53 @@
                 </label>
               </form>
             </div>
-
             <div class="filter__item filter-popular ">
               <h3 class="filter__title filter-popular__title">
-                Popular Tags
+                Популярные теги
               </h3>
               <form class="filter-popular__form" action="#">
                 <label class="filter-popular__label">
                   <input class="filter-popular__input" type="checkbox">
                   <span class="filter-popular__checkbox">
-                    Sweetshirt
+                    Фуфайка
+                  </span>
+                </label> <label class="filter-popular__label">
+                  <input class="filter-popular__input" type="checkbox">
+                  <span class="filter-popular__checkbox">
+                    Мода
                   </span>
                 </label>
                 <label class="filter-popular__label">
                   <input class="filter-popular__input" type="checkbox">
                   <span class="filter-popular__checkbox">
-                    Man Accessories
+                    Мужские аксессуары
                   </span>
                 </label>
                 <label class="filter-popular__label">
                   <input class="filter-popular__input" type="checkbox">
                   <span class="filter-popular__checkbox">
-                    Fashion
+                    Поло
                   </span>
                 </label>
                 <label class="filter-popular__label">
                   <input class="filter-popular__input" type="checkbox">
                   <span class="filter-popular__checkbox">
-                    Polo
+                    Футболка
                   </span>
                 </label>
                 <label class="filter-popular__label">
                   <input class="filter-popular__input" type="checkbox">
                   <span class="filter-popular__checkbox">
-                    T-Shirt
-                  </span>
-                </label>
-                <label class="filter-popular__label">
-                  <input class="filter-popular__input" type="checkbox">
-                  <span class="filter-popular__checkbox">
-                    Jewellery
+                    Ювелирные изделия
                   </span>
                 </label>
               </form>
             </div>
-
           </div>
-
           <div class="shop-content">
             <div class="shop-content__filter">
               <div class="shop-content__filter-buttons">
-                View
+                Вид
                 <button class="shop-content__filter-btn shop-content__filter-btn--active button-grid">
                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px"
                     height="15px">
@@ -316,13 +334,13 @@
               <div class="shop-content__filter-selects">
                 <form class="shop-content__filter-form" action="#">
                   <select class="shop-content__filter-sort select-styler">
-                    <option c value="">Sort By Default</option>
+                    <option value="">Сортировать по:</option>
                     <option value="">1</option>
                     <option value="">2</option>
                     <option value="">3</option>
                   </select>
                   <select class="shop-content__filter-show select-styler">
-                    <option c value="">Sort By Default</option>
+                    <option value="">Сортировать по:</option>
                     <option value="">15</option>
                     <option value="">35</option>
                     <option value="">55</option>
@@ -331,11 +349,55 @@
               </div>
             </div>
             <div class="shop-content__inner">
+              <div class="product-item">
+                <div class="product-item__img-box">
+                  <img class="product-item__images" src="images/product/1.jpg" alt="product">
+                  <div class="product-item__link-box">
+                    <a class="product-item__link" href="product-knit.html">
+                      <svg width="19px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M18.709,18.219 L14.028,13.269 C15.231,11.813 15.891,9.982 15.891,8.075 C15.891,3.622 12.328,-0.002 7.947,-0.002 C3.568,-0.002 0.005,3.622 0.005,8.075 C0.005,12.529 3.568,16.153 7.947,16.153 C9.591,16.153 11.160,15.649 12.498,14.690 L17.216,19.680 C17.414,19.890 17.678,20.004 17.964,20.004 C18.232,20.004 18.486,19.899 18.680,19.710 C19.093,19.307 19.105,18.639 18.709,18.219 L18.709,18.219 ZM7.947,2.106 C11.185,2.106 13.819,4.785 13.819,8.075 C13.819,11.367 11.185,14.046 7.947,14.046 C4.711,14.046 2.078,11.367 2.078,8.075 C2.078,4.785 4.711,2.106 7.947,2.106 L7.947,2.106 Z" />
+                      </svg>
+                    </a>
+                    <a class="product-item__link  product-item__link--line" href="#">
+                      <svg width="16px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M15.999,17.294 L14.854,4.396 C14.830,4.109 14.589,3.892 14.307,3.892 L11.953,3.892 C11.920,1.740 10.163,0.002 8.005,0.002 C5.847,0.002 4.090,1.740 4.057,3.892 L1.703,3.892 C1.417,3.892 1.180,4.109 1.156,4.396 L0.011,17.294 C0.011,17.311 0.007,17.327 0.007,17.343 C0.007,18.812 1.352,20.006 3.007,20.006 L13.003,20.006 C14.658,20.006 16.003,18.812 16.003,17.343 C16.003,17.327 16.003,17.311 15.999,17.294 L15.999,17.294 ZM8.005,1.106 C9.554,1.106 10.817,2.350 10.849,3.892 L5.161,3.892 C5.193,2.350 6.456,1.106 8.005,1.106 L8.005,1.106 ZM13.003,18.902 L3.007,18.902 C1.969,18.902 1.127,18.215 1.111,17.368 L2.206,5.001 L4.053,5.001 L4.053,6.678 C4.053,6.985 4.298,7.230 4.605,7.230 C4.911,7.230 5.157,6.985 5.157,6.678 L5.157,5.001 L10.849,5.001 L10.849,6.678 C10.849,6.985 11.095,7.230 11.401,7.230 C11.708,7.230 11.953,6.985 11.953,6.678 L11.953,5.001 L13.800,5.001 L14.899,17.368 C14.883,18.215 14.037,18.902 13.003,18.902 L13.003,18.902 Z" />
+                      </svg>
+                    </a>
+                    <a class="product-item__link" href="#">
+                      <svg width="23px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M16.894,-0.001 C14.470,-0.001 12.935,1.423 12.074,2.618 C11.851,2.929 11.661,3.239 11.501,3.532 C11.342,3.239 11.152,2.929 10.928,2.618 C10.068,1.423 8.533,-0.001 6.108,-0.001 C4.384,-0.001 2.810,0.697 1.675,1.964 C0.593,3.172 -0.004,4.791 -0.004,6.521 C-0.004,8.405 0.744,10.157 2.349,12.034 C3.783,13.713 5.847,15.443 8.236,17.447 C9.127,18.193 10.047,18.965 11.028,19.809 L11.057,19.834 C11.184,19.944 11.343,19.999 11.501,19.999 C11.660,19.999 11.818,19.944 11.945,19.834 L11.975,19.809 C12.955,18.965 13.876,18.193 14.766,17.447 C17.156,15.443 19.219,13.713 20.653,12.034 C22.258,10.157 23.006,8.405 23.006,6.521 C23.006,4.791 22.410,3.172 21.327,1.964 C20.192,0.696 18.618,-0.001 16.894,-0.001 ZM13.892,16.437 C13.124,17.080 12.334,17.743 11.501,18.455 C10.668,17.743 9.878,17.081 9.111,16.437 C4.434,12.516 1.345,9.926 1.345,6.521 C1.345,5.114 1.821,3.806 2.687,2.840 C3.562,1.863 4.777,1.325 6.108,1.325 C7.957,1.325 9.151,2.445 9.828,3.385 C10.435,4.228 10.752,5.078 10.860,5.404 C10.951,5.677 11.209,5.862 11.501,5.862 C11.793,5.862 12.052,5.677 12.142,5.404 C12.250,5.078 12.567,4.228 13.174,3.385 C13.851,2.445 15.046,1.325 16.894,1.325 C18.225,1.325 19.440,1.863 20.316,2.840 C21.181,3.806 21.658,5.114 21.658,6.521 C21.658,9.926 18.568,12.516 13.892,16.437 Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="product-item__wrapper-box">
+                  <div class="product-item__box">
+                    <div class="star" data-rateyo-rating="4"></div>
+                    <h4 class="product-item__title">
+                      Pretty sight knit (розовый)
+                    </h4>
+                    <div class="product-item__price">
+                      <div class="product-item__new-price">&#8372;1249.99</div>
+                      <div class="product-item__old-price">&#8372;1450.00</div>
+                    </div>
+                  </div>
+                  <div class="product-item__content-box">
+                    <p class="product-item__text">
+                      Трикотаж светло-розового цвета. Круглый вырез горловины. Длинные рукава. Стиль пуловераю. Без
+                      подкладки 65% Шерсть 35% Полиэстер.
+                    </p>
+                    <button class="product-item__btn">В корзину</button>
+                  </div>
+                </div>
+              </div>
               <div class="product-item product-item--sale">
                 <div class="product-item__img-box">
                   <img class="product-item__images" src="images/product/2.jpg" alt="product">
                   <div class="product-item__link-box">
-                    <a class="product-item__link" href="#">
+                    <a class="product-item__link" href="mini-dress-beige.html">
                       <svg width="19px" height="20px">
                         <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
                           d="M18.709,18.219 L14.028,13.269 C15.231,11.813 15.891,9.982 15.891,8.075 C15.891,3.622 12.328,-0.002 7.947,-0.002 C3.568,-0.002 0.005,3.622 0.005,8.075 C0.005,12.529 3.568,16.153 7.947,16.153 C9.591,16.153 11.160,15.649 12.498,14.690 L17.216,19.680 C17.414,19.890 17.678,20.004 17.964,20.004 C18.232,20.004 18.486,19.899 18.680,19.710 C19.093,19.307 19.105,18.639 18.709,18.219 L18.709,18.219 ZM7.947,2.106 C11.185,2.106 13.819,4.785 13.819,8.075 C13.819,11.367 11.185,14.046 7.947,14.046 C4.711,14.046 2.078,11.367 2.078,8.075 C2.078,4.785 4.711,2.106 7.947,2.106 L7.947,2.106 Z" />
@@ -359,18 +421,19 @@
                   <div class="product-item__box">
                     <div class="star" data-rateyo-rating="4.5"></div>
                     <h4 class="product-item__title">
-                      White Polo Men’s T-Shirt
+                      Мини-платье STAND BY ME (БЕЖЕВОЕ)
                     </h4>
                     <div class="product-item__price">
-                      <div class="product-item__new-price">$34.00</div>
-                      <div class="product-item__old-price">$27.00</div>
+                      <div class="product-item__new-price">&#8372;849.99 </div>
+                      <div class="product-item__old-price">&#8372;950.00 </div>
                     </div>
                   </div>
                   <div class="product-item__content-box">
                     <p class="product-item__text">
-                      Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et dolore magna aliqua.
+                      Бежево-белое мини-платье с принтом в мелкую клетку V-образный вырез с пуговицами спереди Подкладка
+                      из 100% хлопка
                     </p>
-                    <button class="product-item__btn">Add to cart</button>
+                    <button class="product-item__btn">В корзину</button>
                   </div>
                 </div>
               </div>
@@ -378,7 +441,7 @@
                 <div class="product-item__img-box">
                   <img class="product-item__images" src="images/product/3.jpg" alt="product">
                   <div class="product-item__link-box">
-                    <a class="product-item__link" href="#">
+                    <a class="product-item__link" href="mini-dress-good-days.html">
                       <svg width="19px" height="20px">
                         <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
                           d="M18.709,18.219 L14.028,13.269 C15.231,11.813 15.891,9.982 15.891,8.075 C15.891,3.622 12.328,-0.002 7.947,-0.002 C3.568,-0.002 0.005,3.622 0.005,8.075 C0.005,12.529 3.568,16.153 7.947,16.153 C9.591,16.153 11.160,15.649 12.498,14.690 L17.216,19.680 C17.414,19.890 17.678,20.004 17.964,20.004 C18.232,20.004 18.486,19.899 18.680,19.710 C19.093,19.307 19.105,18.639 18.709,18.219 L18.709,18.219 ZM7.947,2.106 C11.185,2.106 13.819,4.785 13.819,8.075 C13.819,11.367 11.185,14.046 7.947,14.046 C4.711,14.046 2.078,11.367 2.078,8.075 C2.078,4.785 4.711,2.106 7.947,2.106 L7.947,2.106 Z" />
@@ -402,61 +465,19 @@
                   <div class="product-item__box">
                     <div class="star" data-rateyo-rating="5"></div>
                     <h4 class="product-item__title">
-                      White Polo Men’s T-Shirt
+                      Mини-юбка GOOD DAYS
                     </h4>
                     <div class="product-item__price">
-                      <div class="product-item__new-price">$34.00</div>
-                      <div class="product-item__old-price">$27.00</div>
+                      <div class="product-item__new-price">&#8372;550.00</div>
+                      <div class="product-item__old-price">&#8372;759.99</div>
                     </div>
                   </div>
                   <div class="product-item__content-box">
                     <p class="product-item__text">
-                      Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et dolore magna aliqua.
+                      Белая мини-юбка с высокой талией. Плиссированный стиль. Приталенный пояс. Застежка-молния сбоку.
+                      На подкладке 65% хлопок 35% полиэстер
                     </p>
-                    <button class="product-item__btn">Add to cart</button>
-                  </div>
-                </div>
-              </div>
-              <div class="product-item">
-                <div class="product-item__img-box">
-                  <img class="product-item__images" src="images/product/5.jpg" alt="product">
-                  <div class="product-item__link-box">
-                    <a class="product-item__link" href="#">
-                      <svg width="19px" height="20px">
-                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
-                          d="M18.709,18.219 L14.028,13.269 C15.231,11.813 15.891,9.982 15.891,8.075 C15.891,3.622 12.328,-0.002 7.947,-0.002 C3.568,-0.002 0.005,3.622 0.005,8.075 C0.005,12.529 3.568,16.153 7.947,16.153 C9.591,16.153 11.160,15.649 12.498,14.690 L17.216,19.680 C17.414,19.890 17.678,20.004 17.964,20.004 C18.232,20.004 18.486,19.899 18.680,19.710 C19.093,19.307 19.105,18.639 18.709,18.219 L18.709,18.219 ZM7.947,2.106 C11.185,2.106 13.819,4.785 13.819,8.075 C13.819,11.367 11.185,14.046 7.947,14.046 C4.711,14.046 2.078,11.367 2.078,8.075 C2.078,4.785 4.711,2.106 7.947,2.106 L7.947,2.106 Z" />
-                      </svg>
-                    </a>
-                    <a class="product-item__link  product-item__link--line" href="#">
-                      <svg width="16px" height="20px">
-                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
-                          d="M15.999,17.294 L14.854,4.396 C14.830,4.109 14.589,3.892 14.307,3.892 L11.953,3.892 C11.920,1.740 10.163,0.002 8.005,0.002 C5.847,0.002 4.090,1.740 4.057,3.892 L1.703,3.892 C1.417,3.892 1.180,4.109 1.156,4.396 L0.011,17.294 C0.011,17.311 0.007,17.327 0.007,17.343 C0.007,18.812 1.352,20.006 3.007,20.006 L13.003,20.006 C14.658,20.006 16.003,18.812 16.003,17.343 C16.003,17.327 16.003,17.311 15.999,17.294 L15.999,17.294 ZM8.005,1.106 C9.554,1.106 10.817,2.350 10.849,3.892 L5.161,3.892 C5.193,2.350 6.456,1.106 8.005,1.106 L8.005,1.106 ZM13.003,18.902 L3.007,18.902 C1.969,18.902 1.127,18.215 1.111,17.368 L2.206,5.001 L4.053,5.001 L4.053,6.678 C4.053,6.985 4.298,7.230 4.605,7.230 C4.911,7.230 5.157,6.985 5.157,6.678 L5.157,5.001 L10.849,5.001 L10.849,6.678 C10.849,6.985 11.095,7.230 11.401,7.230 C11.708,7.230 11.953,6.985 11.953,6.678 L11.953,5.001 L13.800,5.001 L14.899,17.368 C14.883,18.215 14.037,18.902 13.003,18.902 L13.003,18.902 Z" />
-                      </svg>
-                    </a>
-                    <a class="product-item__link" href="#">
-                      <svg width="23px" height="20px">
-                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
-                          d="M16.894,-0.001 C14.470,-0.001 12.935,1.423 12.074,2.618 C11.851,2.929 11.661,3.239 11.501,3.532 C11.342,3.239 11.152,2.929 10.928,2.618 C10.068,1.423 8.533,-0.001 6.108,-0.001 C4.384,-0.001 2.810,0.697 1.675,1.964 C0.593,3.172 -0.004,4.791 -0.004,6.521 C-0.004,8.405 0.744,10.157 2.349,12.034 C3.783,13.713 5.847,15.443 8.236,17.447 C9.127,18.193 10.047,18.965 11.028,19.809 L11.057,19.834 C11.184,19.944 11.343,19.999 11.501,19.999 C11.660,19.999 11.818,19.944 11.945,19.834 L11.975,19.809 C12.955,18.965 13.876,18.193 14.766,17.447 C17.156,15.443 19.219,13.713 20.653,12.034 C22.258,10.157 23.006,8.405 23.006,6.521 C23.006,4.791 22.410,3.172 21.327,1.964 C20.192,0.696 18.618,-0.001 16.894,-0.001 ZM13.892,16.437 C13.124,17.080 12.334,17.743 11.501,18.455 C10.668,17.743 9.878,17.081 9.111,16.437 C4.434,12.516 1.345,9.926 1.345,6.521 C1.345,5.114 1.821,3.806 2.687,2.840 C3.562,1.863 4.777,1.325 6.108,1.325 C7.957,1.325 9.151,2.445 9.828,3.385 C10.435,4.228 10.752,5.078 10.860,5.404 C10.951,5.677 11.209,5.862 11.501,5.862 C11.793,5.862 12.052,5.677 12.142,5.404 C12.250,5.078 12.567,4.228 13.174,3.385 C13.851,2.445 15.046,1.325 16.894,1.325 C18.225,1.325 19.440,1.863 20.316,2.840 C21.181,3.806 21.658,5.114 21.658,6.521 C21.658,9.926 18.568,12.516 13.892,16.437 Z" />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-                <div class="product-item__wrapper-box">
-                  <div class="product-item__box">
-                    <div class="star" data-rateyo-rating="4.3"></div>
-                    <h4 class="product-item__title">
-                      White Polo Men’s T-Shirt
-                    </h4>
-                    <div class="product-item__price">
-                      <div class="product-item__new-price">$34.00</div>
-                      <div class="product-item__old-price">$27.00</div>
-                    </div>
-                  </div>
-                  <div class="product-item__content-box">
-                    <p class="product-item__text">
-                      Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et dolore magna aliqua.
-                    </p>
-                    <button class="product-item__btn">Add to cart</button>
+                    <button class="product-item__btn">В корзину</button>
                   </div>
                 </div>
               </div>
@@ -464,7 +485,7 @@
                 <div class="product-item__img-box">
                   <img class="product-item__images" src="images/product/4.jpg" alt="product">
                   <div class="product-item__link-box">
-                    <a class="product-item__link" href="#">
+                    <a class="product-item__link" href="mini-dress-rain.html">
                       <svg width="19px" height="20px">
                         <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
                           d="M18.709,18.219 L14.028,13.269 C15.231,11.813 15.891,9.982 15.891,8.075 C15.891,3.622 12.328,-0.002 7.947,-0.002 C3.568,-0.002 0.005,3.622 0.005,8.075 C0.005,12.529 3.568,16.153 7.947,16.153 C9.591,16.153 11.160,15.649 12.498,14.690 L17.216,19.680 C17.414,19.890 17.678,20.004 17.964,20.004 C18.232,20.004 18.486,19.899 18.680,19.710 C19.093,19.307 19.105,18.639 18.709,18.219 L18.709,18.219 ZM7.947,2.106 C11.185,2.106 13.819,4.785 13.819,8.075 C13.819,11.367 11.185,14.046 7.947,14.046 C4.711,14.046 2.078,11.367 2.078,8.075 C2.078,4.785 4.711,2.106 7.947,2.106 L7.947,2.106 Z" />
@@ -488,18 +509,73 @@
                   <div class="product-item__box">
                     <div class="star" data-rateyo-rating="4.8"></div>
                     <h4 class="product-item__title">
-                      White Polo Men’s T-Shirt
+                      Мини-платье Raine
                     </h4>
                     <div class="product-item__price">
-                      <div class="product-item__new-price">$34.00</div>
-                      <div class="product-item__old-price">$27.00</div>
+                      <div class="product-item__new-price">&#8372;1899.99</div>
+                      <div class="product-item__old-price">&#8372;1999.99</div>
                     </div>
                   </div>
                   <div class="product-item__content-box">
                     <p class="product-item__text">
-                      Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et dolore magna aliqua.
+                      Кобальт синий мини - платье высокий, круглый вырез.
+                      Tank стиль,
+                      ребристой материал,
+                      не облицованный,
+                      50% вискоза,
+                      28% полиэстер,
+                      22% нейлон.
                     </p>
-                    <button class="product-item__btn">Add to cart</button>
+                    <button class="product-item__btn">В корзину</button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-item__img-box">
+                  <img class="product-item__images" src="images/product/5.jpg" alt="product">
+                  <div class="product-item__link-box">
+                    <a class="product-item__link" href="mini-skirt-lulu.html">
+                      <svg width="19px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M18.709,18.219 L14.028,13.269 C15.231,11.813 15.891,9.982 15.891,8.075 C15.891,3.622 12.328,-0.002 7.947,-0.002 C3.568,-0.002 0.005,3.622 0.005,8.075 C0.005,12.529 3.568,16.153 7.947,16.153 C9.591,16.153 11.160,15.649 12.498,14.690 L17.216,19.680 C17.414,19.890 17.678,20.004 17.964,20.004 C18.232,20.004 18.486,19.899 18.680,19.710 C19.093,19.307 19.105,18.639 18.709,18.219 L18.709,18.219 ZM7.947,2.106 C11.185,2.106 13.819,4.785 13.819,8.075 C13.819,11.367 11.185,14.046 7.947,14.046 C4.711,14.046 2.078,11.367 2.078,8.075 C2.078,4.785 4.711,2.106 7.947,2.106 L7.947,2.106 Z" />
+                      </svg>
+                    </a>
+                    <a class="product-item__link  product-item__link--line" href="#">
+                      <svg width="16px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M15.999,17.294 L14.854,4.396 C14.830,4.109 14.589,3.892 14.307,3.892 L11.953,3.892 C11.920,1.740 10.163,0.002 8.005,0.002 C5.847,0.002 4.090,1.740 4.057,3.892 L1.703,3.892 C1.417,3.892 1.180,4.109 1.156,4.396 L0.011,17.294 C0.011,17.311 0.007,17.327 0.007,17.343 C0.007,18.812 1.352,20.006 3.007,20.006 L13.003,20.006 C14.658,20.006 16.003,18.812 16.003,17.343 C16.003,17.327 16.003,17.311 15.999,17.294 L15.999,17.294 ZM8.005,1.106 C9.554,1.106 10.817,2.350 10.849,3.892 L5.161,3.892 C5.193,2.350 6.456,1.106 8.005,1.106 L8.005,1.106 ZM13.003,18.902 L3.007,18.902 C1.969,18.902 1.127,18.215 1.111,17.368 L2.206,5.001 L4.053,5.001 L4.053,6.678 C4.053,6.985 4.298,7.230 4.605,7.230 C4.911,7.230 5.157,6.985 5.157,6.678 L5.157,5.001 L10.849,5.001 L10.849,6.678 C10.849,6.985 11.095,7.230 11.401,7.230 C11.708,7.230 11.953,6.985 11.953,6.678 L11.953,5.001 L13.800,5.001 L14.899,17.368 C14.883,18.215 14.037,18.902 13.003,18.902 L13.003,18.902 Z" />
+                      </svg>
+                    </a>
+                    <a class="product-item__link" href="#">
+                      <svg width="23px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M16.894,-0.001 C14.470,-0.001 12.935,1.423 12.074,2.618 C11.851,2.929 11.661,3.239 11.501,3.532 C11.342,3.239 11.152,2.929 10.928,2.618 C10.068,1.423 8.533,-0.001 6.108,-0.001 C4.384,-0.001 2.810,0.697 1.675,1.964 C0.593,3.172 -0.004,4.791 -0.004,6.521 C-0.004,8.405 0.744,10.157 2.349,12.034 C3.783,13.713 5.847,15.443 8.236,17.447 C9.127,18.193 10.047,18.965 11.028,19.809 L11.057,19.834 C11.184,19.944 11.343,19.999 11.501,19.999 C11.660,19.999 11.818,19.944 11.945,19.834 L11.975,19.809 C12.955,18.965 13.876,18.193 14.766,17.447 C17.156,15.443 19.219,13.713 20.653,12.034 C22.258,10.157 23.006,8.405 23.006,6.521 C23.006,4.791 22.410,3.172 21.327,1.964 C20.192,0.696 18.618,-0.001 16.894,-0.001 ZM13.892,16.437 C13.124,17.080 12.334,17.743 11.501,18.455 C10.668,17.743 9.878,17.081 9.111,16.437 C4.434,12.516 1.345,9.926 1.345,6.521 C1.345,5.114 1.821,3.806 2.687,2.840 C3.562,1.863 4.777,1.325 6.108,1.325 C7.957,1.325 9.151,2.445 9.828,3.385 C10.435,4.228 10.752,5.078 10.860,5.404 C10.951,5.677 11.209,5.862 11.501,5.862 C11.793,5.862 12.052,5.677 12.142,5.404 C12.250,5.078 12.567,4.228 13.174,3.385 C13.851,2.445 15.046,1.325 16.894,1.325 C18.225,1.325 19.440,1.863 20.316,2.840 C21.181,3.806 21.658,5.114 21.658,6.521 C21.658,9.926 18.568,12.516 13.892,16.437 Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="product-item__wrapper-box">
+                  <div class="product-item__box">
+                    <div class="star" data-rateyo-rating="4.3"></div>
+                    <h4 class="product-item__title">
+                      Мини-юбка LULU (черная)
+                    </h4>
+                    <div class="product-item__price">
+                      <div class="product-item__new-price">&#8372;1050.00</div>
+                      <div class="product-item__old-price">&#8372;1299.99</div>
+                    </div>
+                  </div>
+                  <div class="product-item__content-box">
+                    <p class="product-item__text">
+                      Черная мини-юбка.
+                      Высокая талия. С
+                      запахом.
+                      Регулируемый, завязанный на поясе. Без
+                      подкладки.
+                      65% хлопок.
+                      35% полиэстер.
+                    </p>
+                    <button class="product-item__btn">В корзину</button>
                   </div>
                 </div>
               </div>
@@ -507,7 +583,7 @@
                 <div class="product-item__img-box">
                   <img class="product-item__images" src="images/product/6.jpg" alt="product">
                   <div class="product-item__link-box">
-                    <a class="product-item__link" href="#">
+                    <a class="product-item__link" href="pascal-shirt.html">
                       <svg width="19px" height="20px">
                         <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
                           d="M18.709,18.219 L14.028,13.269 C15.231,11.813 15.891,9.982 15.891,8.075 C15.891,3.622 12.328,-0.002 7.947,-0.002 C3.568,-0.002 0.005,3.622 0.005,8.075 C0.005,12.529 3.568,16.153 7.947,16.153 C9.591,16.153 11.160,15.649 12.498,14.690 L17.216,19.680 C17.414,19.890 17.678,20.004 17.964,20.004 C18.232,20.004 18.486,19.899 18.680,19.710 C19.093,19.307 19.105,18.639 18.709,18.219 L18.709,18.219 ZM7.947,2.106 C11.185,2.106 13.819,4.785 13.819,8.075 C13.819,11.367 11.185,14.046 7.947,14.046 C4.711,14.046 2.078,11.367 2.078,8.075 C2.078,4.785 4.711,2.106 7.947,2.106 L7.947,2.106 Z" />
@@ -531,18 +607,24 @@
                   <div class="product-item__box">
                     <div class="star" data-rateyo-rating="3.5"></div>
                     <h4 class="product-item__title">
-                      White Polo Men’s T-Shirt
+                      PASCAL Рубашка
                     </h4>
                     <div class="product-item__price">
-                      <div class="product-item__new-price">$34.00</div>
-                      <div class="product-item__old-price">$27.00</div>
+                      <div class="product-item__new-price">&#8372;1350.00</div>
+                      <div class="product-item__old-price">&#8372;1550.00</div>
                     </div>
                   </div>
                   <div class="product-item__content-box">
                     <p class="product-item__text">
-                      Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et dolore magna aliqua.
+                      Белая рубашка с длинным рукавом.
+                      Collared вырез.
+                      Кнопка фронт.
+                      Оборудованная талией.
+                      наручниках втулки.
+                      Не подкладке.
+                      100% вискоза.
                     </p>
-                    <button class="product-item__btn">Add to cart</button>
+                    <button class="product-item__btn">В корзину</button>
                   </div>
                 </div>
               </div>
@@ -572,24 +654,29 @@
                 </div>
                 <div class="product-item__wrapper-box">
                   <div class="product-item__box">
-                    <div class="star" data-rateyo-rating="4.3"></div>
+                    <div class="star" data-rateyo-rating="4"></div>
                     <h4 class="product-item__title">
-                      White Polo Men’s T-Shirt
+                      Мини-юбка MONACO
                     </h4>
                     <div class="product-item__price">
-                      <div class="product-item__new-price">$34.00</div>
-                      <div class="product-item__old-price">$27.00</div>
+                      <div class="product-item__new-price">&#8372;799.99</div>
+                      <div class="product-item__old-price">&#8372;959.00</div>
                     </div>
                   </div>
                   <div class="product-item__content-box">
                     <p class="product-item__text">
-                      Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et dolore magna aliqua.
+                      Черная юбка-миди с высокой талией.
+                      Асимметричная талия и нижний край. Потягивающийся.
+                      дизайн.
+                      Рюши по бокам.
+                      85% нейлон.
+                      15% спандекс.
                     </p>
-                    <button class="product-item__btn">Add to cart</button>
+                    <button class="product-item__btn">В корзину</button>
                   </div>
                 </div>
               </div>
-              <div class="product-item">
+              <div class="product-item product-item--sale">
                 <div class="product-item__img-box">
                   <img class="product-item__images" src="images/product/8.jpg" alt="product">
                   <div class="product-item__link-box">
@@ -615,24 +702,30 @@
                 </div>
                 <div class="product-item__wrapper-box">
                   <div class="product-item__box">
-                    <div class="star" data-rateyo-rating="5"></div>
+                    <div class="star" data-rateyo-rating="4.5"></div>
                     <h4 class="product-item__title">
-                      White Polo Men’s T-Shirt
+                      Джемпер WYLDER (МУДРЕЦ)
                     </h4>
                     <div class="product-item__price">
-                      <div class="product-item__new-price">$34.00</div>
-                      <div class="product-item__old-price">$27.00</div>
+                      <div class="product-item__new-price">&#8372;1100.00</div>
+                      <div class="product-item__old-price">&#8372;1399.99</div>
                     </div>
                   </div>
                   <div class="product-item__content-box">
                     <p class="product-item__text">
-                      Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et dolore magna aliqua.
+                      Зеленый джемпер в рубчик.
+                      Круглый вырез горловины.
+                      Длинные рукава с приталенными эластичными краями.
+                      Облегающий эластичный пояс с регулируемым шнурком.
+                      Пуловер без подкладки.
+                      50% хлопок.
+                      50% полиэстер.
                     </p>
-                    <button class="product-item__btn">Add to cart</button>
+                    <button class="product-item__btn">В корзину</button>
                   </div>
                 </div>
               </div>
-              <div class="product-item product-item--sale">
+              <div class="product-item">
                 <div class="product-item__img-box">
                   <img class="product-item__images" src="images/product/9.jpg" alt="product">
                   <div class="product-item__link-box">
@@ -658,24 +751,26 @@
                 </div>
                 <div class="product-item__wrapper-box">
                   <div class="product-item__box">
-                    <div class="star" data-rateyo-rating="3.9"></div>
+                    <div class="star" data-rateyo-rating="5"></div>
                     <h4 class="product-item__title">
-                      White Polo Men’s T-Shirt
+                      Мини-платье NYSSA
                     </h4>
                     <div class="product-item__price">
-                      <div class="product-item__new-price">$34.00</div>
-                      <div class="product-item__old-price">$27.00</div>
+                      <div class="product-item__new-price">&#8372;1850.00</div>
+                      <div class="product-item__old-price">1999.99</div>
                     </div>
                   </div>
                   <div class="product-item__content-box">
                     <p class="product-item__text">
-                      Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et dolore magna aliqua.
+                      Черное мини-платье в стиле бэбдолл с V-образным вырезом. Завязка спереди.
+                      Эластичные манжеты.
+                      Без подкладки, 100% хлопок.
                     </p>
-                    <button class="product-item__btn">Add to cart</button>
+                    <button class="product-item__btn">В корзину</button>
                   </div>
                 </div>
               </div>
-              <div class="product-item">
+              <div class="product-item product-item--sale">
                 <div class="product-item__img-box">
                   <img class="product-item__images" src="images/product/10.jpg" alt="product">
                   <div class="product-item__link-box">
@@ -701,24 +796,27 @@
                 </div>
                 <div class="product-item__wrapper-box">
                   <div class="product-item__box">
-                    <div class="star" data-rateyo-rating="4"></div>
+                    <div class="star" data-rateyo-rating="4.3"></div>
                     <h4 class="product-item__title">
-                      White Polo Men’s T-Shirt
+                      Мини-юбка CALI (КОРИЧНЕВАЯ)
                     </h4>
                     <div class="product-item__price">
-                      <div class="product-item__new-price">$34.00</div>
-                      <div class="product-item__old-price">$27.00</div>
+                      <div class="product-item__new-price">&#8372;659.00</div>
+                      <div class="product-item__old-price">&#8372;799.99</div>
                     </div>
                   </div>
                   <div class="product-item__content-box">
                     <p class="product-item__text">
-                      Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et dolore magna aliqua.
+                      Коричневая мини-юбка с завышенной талией.
+                      Подол со складками.
+                      Застежка- молния, сзади подкладка.
+                      100% полиэстер.
                     </p>
-                    <button class="product-item__btn">Add to cart</button>
+                    <button class="product-item__btn">В корзину</button>
                   </div>
                 </div>
               </div>
-              <div class="product-item product-item--sale">
+              <div class="product-item">
                 <div class="product-item__img-box">
                   <img class="product-item__images" src="images/product/11.jpg" alt="product">
                   <div class="product-item__link-box">
@@ -744,20 +842,75 @@
                 </div>
                 <div class="product-item__wrapper-box">
                   <div class="product-item__box">
-                    <div class="star" data-rateyo-rating="3.5"></div>
+                    <div class="star" data-rateyo-rating="4.8"></div>
                     <h4 class="product-item__title">
-                      White Polo Men’s T-Shirt
+                      Комбинезон NEW FLOWERS (СИРЕНЕВЫЙ)
                     </h4>
                     <div class="product-item__price">
-                      <div class="product-item__new-price">$34.00</div>
-                      <div class="product-item__old-price">$27.00</div>
+                      <div class="product-item__new-price">&#8372;1350.00</div>
+                      <div class="product-item__old-price">&#8372;1499.99</div>
                     </div>
                   </div>
                   <div class="product-item__content-box">
                     <p class="product-item__text">
-                      Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et dolore magna aliqua.
+                      Выцветший сиреневый комбинезон с цветочным принтом.
+                      Шелковистый материал.
+                      V-образный вырез.
+                      Шнуровка спереди.
+                      Рукава средней длины на резинке.
+                      Без подкладки.
+                      Карманы.
+                      Застежка-молния.
+                      Полиэстер.
                     </p>
-                    <button class="product-item__btn">Add to cart</button>
+                    <button class="product-item__btn">В корзину</button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item product-item--sale">
+                <div class="product-item__img-box">
+                  <img class="product-item__images" src="images/product/12.jpg" alt="product">
+                  <div class="product-item__link-box">
+                    <a class="product-item__link" href="#">
+                      <svg width="19px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M18.709,18.219 L14.028,13.269 C15.231,11.813 15.891,9.982 15.891,8.075 C15.891,3.622 12.328,-0.002 7.947,-0.002 C3.568,-0.002 0.005,3.622 0.005,8.075 C0.005,12.529 3.568,16.153 7.947,16.153 C9.591,16.153 11.160,15.649 12.498,14.690 L17.216,19.680 C17.414,19.890 17.678,20.004 17.964,20.004 C18.232,20.004 18.486,19.899 18.680,19.710 C19.093,19.307 19.105,18.639 18.709,18.219 L18.709,18.219 ZM7.947,2.106 C11.185,2.106 13.819,4.785 13.819,8.075 C13.819,11.367 11.185,14.046 7.947,14.046 C4.711,14.046 2.078,11.367 2.078,8.075 C2.078,4.785 4.711,2.106 7.947,2.106 L7.947,2.106 Z" />
+                      </svg>
+                    </a>
+                    <a class="product-item__link  product-item__link--line" href="#">
+                      <svg width="16px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M15.999,17.294 L14.854,4.396 C14.830,4.109 14.589,3.892 14.307,3.892 L11.953,3.892 C11.920,1.740 10.163,0.002 8.005,0.002 C5.847,0.002 4.090,1.740 4.057,3.892 L1.703,3.892 C1.417,3.892 1.180,4.109 1.156,4.396 L0.011,17.294 C0.011,17.311 0.007,17.327 0.007,17.343 C0.007,18.812 1.352,20.006 3.007,20.006 L13.003,20.006 C14.658,20.006 16.003,18.812 16.003,17.343 C16.003,17.327 16.003,17.311 15.999,17.294 L15.999,17.294 ZM8.005,1.106 C9.554,1.106 10.817,2.350 10.849,3.892 L5.161,3.892 C5.193,2.350 6.456,1.106 8.005,1.106 L8.005,1.106 ZM13.003,18.902 L3.007,18.902 C1.969,18.902 1.127,18.215 1.111,17.368 L2.206,5.001 L4.053,5.001 L4.053,6.678 C4.053,6.985 4.298,7.230 4.605,7.230 C4.911,7.230 5.157,6.985 5.157,6.678 L5.157,5.001 L10.849,5.001 L10.849,6.678 C10.849,6.985 11.095,7.230 11.401,7.230 C11.708,7.230 11.953,6.985 11.953,6.678 L11.953,5.001 L13.800,5.001 L14.899,17.368 C14.883,18.215 14.037,18.902 13.003,18.902 L13.003,18.902 Z" />
+                      </svg>
+                    </a>
+                    <a class="product-item__link" href="#">
+                      <svg width="23px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(41, 40, 45)"
+                          d="M16.894,-0.001 C14.470,-0.001 12.935,1.423 12.074,2.618 C11.851,2.929 11.661,3.239 11.501,3.532 C11.342,3.239 11.152,2.929 10.928,2.618 C10.068,1.423 8.533,-0.001 6.108,-0.001 C4.384,-0.001 2.810,0.697 1.675,1.964 C0.593,3.172 -0.004,4.791 -0.004,6.521 C-0.004,8.405 0.744,10.157 2.349,12.034 C3.783,13.713 5.847,15.443 8.236,17.447 C9.127,18.193 10.047,18.965 11.028,19.809 L11.057,19.834 C11.184,19.944 11.343,19.999 11.501,19.999 C11.660,19.999 11.818,19.944 11.945,19.834 L11.975,19.809 C12.955,18.965 13.876,18.193 14.766,17.447 C17.156,15.443 19.219,13.713 20.653,12.034 C22.258,10.157 23.006,8.405 23.006,6.521 C23.006,4.791 22.410,3.172 21.327,1.964 C20.192,0.696 18.618,-0.001 16.894,-0.001 ZM13.892,16.437 C13.124,17.080 12.334,17.743 11.501,18.455 C10.668,17.743 9.878,17.081 9.111,16.437 C4.434,12.516 1.345,9.926 1.345,6.521 C1.345,5.114 1.821,3.806 2.687,2.840 C3.562,1.863 4.777,1.325 6.108,1.325 C7.957,1.325 9.151,2.445 9.828,3.385 C10.435,4.228 10.752,5.078 10.860,5.404 C10.951,5.677 11.209,5.862 11.501,5.862 C11.793,5.862 12.052,5.677 12.142,5.404 C12.250,5.078 12.567,4.228 13.174,3.385 C13.851,2.445 15.046,1.325 16.894,1.325 C18.225,1.325 19.440,1.863 20.316,2.840 C21.181,3.806 21.658,5.114 21.658,6.521 C21.658,9.926 18.568,12.516 13.892,16.437 Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="product-item__wrapper-box">
+                  <div class="product-item__box">
+                    <div class="star" data-rateyo-rating="3.5"></div>
+                    <h4 class="product-item__title">
+                      Мини-платье SHANTELLE (ОРАНЖЕВОЕ)
+                    </h4>
+                    <div class="product-item__price">
+                      <div class="product-item__new-price">&#8372;1050.00</div>
+                      <div class="product-item__old-price">&#8372;1199.99</div>
+                    </div>
+                  </div>
+                  <div class="product-item__content-box">
+                    <p class="product-item__text">
+                      Оранжевое платье-минию
+                      Круглый вырез в рубчикю Без рукавов с разрезом сбоку.
+                      Без подкладки.
+                      65% хлопок.
+                      35% полиэстер.
+                    </p>
+                    <button class="product-item__btn">В корзину</button>
                   </div>
                 </div>
               </div>
@@ -797,11 +950,11 @@
       <div class="footer-top">
         <div class="footer-top__contact">
           <a class="logo footer-top__logo" href="#">
-            <img class="logo__img" src="images/logo.png" alt="logo">
+            <img class="logo__img" src="images/logo.svg" alt="logo">
           </a>
-          <a class="footer-top__address" href="#">No. 342 - London Oxford Street,
-            012 United States</a>
-          <a class="footer-top__eamil" href="mailto:Youremail@gmail.com"> Youremail@gmail.com</a>
+          <a class="footer-top__address" href="https://goo.gl/maps/Ajxt13G4KwZj3Kq77" target="_blank">вул.Челюскінців,
+            189E, Донецьк, Донецька область, 83048</a>
+          <a class="footer-top__eamil" href="mailto:Youremail@gmail.com"> kenlue@gmail.com</a>
           <a class="footer-top__phone" href="tel:+02838388393"> +0283 838 8393</a>
           <ul class="footer-top__social-list">
             <li class="footer-top__social-item">
@@ -853,59 +1006,62 @@
           </ul>
         </div>
         <div class="footer-top__nav">
-          <h6 class="footer-top__title">Useful Links</h6>
+          <h6 class="footer-top__title">Cсылки</h6>
           <ul class="footer-top__list">
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">About Us</a>
+              <a class="footer-top__link" href="#">
+                О нас</a>
             </li>
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Privacy Policy</a>
+              <a class="footer-top__link" href="#">
+                Политика конфиденциальности</a>
             </li>
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Terms & Conditions</a>
+              <a class="footer-top__link" href="#">
+                Условия и положения</a>
             </li>
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Contact Us</a>
+              <a class="footer-top__link" href="#">Связаться с нами</a>
             </li>
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Help & Support</a>
+              <a class="footer-top__link" href="#">Помощь и поддержка</a>
             </li>
           </ul>
         </div>
         <div class="footer-top__nav">
-          <h6 class="footer-top__title">My Account</h6>
+          <h6 class="footer-top__title">Мой аккаунт</h6>
           <ul class="footer-top__list">
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">My Account</a>
+              <a class="footer-top__link" href="#">Мой аккаунт</a>
             </li>
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">My Cart</a>
+              <a class="footer-top__link" href="#">Моя корзина</a>
             </li>
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">My WIshlist</a>
+              <a class="footer-top__link" href="#">
+                Список моих желаний</a>
             </li>
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Registration</a>
+              <a class="footer-top__link" href="#">Hегистрация</a>
             </li>
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Check Out</a>
+              <a class="footer-top__link" href="#">Оплатить</a>
             </li>
           </ul>
         </div>
         <div class="footer-top__forms">
-          <h6 class="footer-top__title">Subscribe Our Newsletter</h6>
+          <h6 class="footer-top__title">Подпишитесь на нашу рассылку новостей</h6>
           <p class="footer-top__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+            Будьте в курсі наших акцій, підпишіться на розсилку.</p>
           <form class="footer-top__form" action="#">
-            <input class="footer-top__form-input" type="email" placeholder="Your email address" required>
-            <button class="footer-top__form-btn" type="submit">Subscribe</button>
+            <input class="footer-top__form-input" type="email" placeholder="Электронная почта" required>
+            <button class="footer-top__form-btn" type="submit">Подписатся</button>
           </form>
         </div>
       </div>
       <div class="footer-bottom">
         <p class="footer-bottom__copy">
-          © 2019 CodeAstrology. All Rights Reserved.
+          © 2021 CodeAstrology. All Rights Reserved.
         </p>
         <div class="footer-bottom__accept">
           We Accept
@@ -915,9 +1071,7 @@
         </div>
       </div>
     </div>
-
   </footer>
-
 
   <script src="js/main.min.js"></script>
 </body>

@@ -7,7 +7,7 @@ body {
   color: $default;
   font-size: 16px;
   line-height: 26px;
-  @extend %quicksand-500;
+  @extend %roboto-500;
   display: flex;
   flex-direction: column;
 }
@@ -26,7 +26,7 @@ a {
   color: $default;
   font-size: 16px;
   line-height: 26px;
-  @extend %quicksand-500;
+  @extend %roboto-500;
 }
 
 .title {
@@ -38,10 +38,9 @@ a {
   margin-bottom: 10px;
   text-transform: uppercase;
 }
-.text {
+.text{
+  margin-bottom: 50px;
   text-align: center;
-  margin: 0 auto 55px;
-  max-width: 570px;
 }
 .star {
   margin: 0 auto;
@@ -172,4 +171,18 @@ a {
   font-size: 30px;
     line-height: 40px;
 }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+  50% {
+    opacity: .7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
 }

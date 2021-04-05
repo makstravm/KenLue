@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Marcho</title>
+  <title>KenLue</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -12,34 +12,67 @@
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        <a class="logo" href="#"><img class="logo__img" src="images/logo.png" alt="logo"></a>
+        <a class="logo" href="index.html">
+          <img class="logo__img" src="images/logo.svg" alt="logo">
+        </a>
         <nav class="menu">
           <button class="menu__btn"><span></span></button>
           <ul class="menu__list">
             <li class="menu__list-item">
-              <a class="menu__list-link menu__list-link--active" href="#">HOME</a>
+              <a class="menu__list-link" href="index.html">Главная</a>
+            </li>
+            <li class="menu__list-item menu__list-item--catalog">
+              <a class="menu__list-link menu__list-link--active" href="shop.html">Каталог</a>
+              <ul class="menu__list-catalog">
+                <li class="menu__catalog-list">
+                  <a class="menu__catalog-link" href="shop.html">
+                    Женская мода
+                  </a>
+                </li>
+                <li class="menu__catalog-list">
+                  <a class="menu__catalog-link" href="shop.html">
+                    Мужская мода
+                  </a>
+                </li>
+                <li class="menu__catalog-list">
+                  <a class="menu__catalog-link" href="shop.html">
+                    Одежда & аксессуары
+                  </a>
+                </li>
+                <li class="menu__catalog-list">
+                  <a class="menu__catalog-link" href="shop.html">
+                    Обувь & украшения
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">SHOP</a>
+              <a class="menu__list-link" href="blog.html">
+                Блог
+              </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">PAGE</a>
+              <a class="menu__list-link" href="#">
+                О нас
+              </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">BLOG</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">CONTACT</a>
+              <a class="menu__list-link" href="contacts.html">
+                Контакты
+              </a>
             </li>
           </ul>
         </nav>
         <div class="user-nav">
-          <a class="user-nav__link" href="#">
+          <a class="user-nav__link" href="login.html">
             <img class="user-nav__link-img" src="images/icons/user.svg" alt="user icon">
           </a>
-          <a class="user-nav__link" href="#">
+          <span class="user-nav__link user-nav__link-search">
             <img class="user-nav__link-img" src="images/icons/search.svg" alt="user icon">
-          </a>
+            <form class="user-nav__form" action="#">
+              <input class="user-nav__input" type="text" placeholder="Поиск товаров.....">
+            </form>
+          </span>
           <a class="user-nav__link" href="#">
             <img class="user-nav__link-img" src="images/icons/heart.svg" alt="user icon">
             <span class="user-nav__num">3</span>
@@ -57,14 +90,17 @@
     <section class="top">
       <div class="top__container" style="background-image: url('images/top-bg.jpg')">
         <div class="container">
-          <h2 class="top-title title">SHOP PAGE</h2>
+          <h2 class="top-title title">Женская одежда</h2>
           <div class="breadcrumbs">
             <ul class="breadcrumbs__list">
               <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="#">Home</a>
+                <a class="breadcrumbs__link" href="index.html">Главная</a>
               </li>
               <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="#">SHOP PAGE</a>
+                <a class="breadcrumbs__link" href="shop.html">Каталог</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="shop.html">Женская одежда</a>
               </li>
             </ul>
           </div>
@@ -79,56 +115,61 @@
             <div class="product-one__slide product-slide">
               <div class="product-slide__thumb">
                 <div class="product-slide__thumb-item">
-                  <img src="images/product/item/1.jpg" alt="product image">
+                  <img src="images/product/woman/pascal-shirt/1.jpg" alt="product image">
                 </div>
                 <div class="product-slide__thumb-item">
-                  <img src="images/product/item/2.jpg" alt="product image">
+                  <img src="images/product/woman/pascal-shirt/2.jpg" alt="product image">
                 </div>
                 <div class="product-slide__thumb-item">
-                  <img src="images/product/item/3.jpg" alt="product image">
+                  <img src="images/product/woman/pascal-shirt/3.jpg" alt="product image">
                 </div>
                 <div class="product-slide__thumb-item">
-                  <img src="images/product/item/4.jpg" alt="product image">
+                  <img src="images/product/woman/pascal-shirt/4.jpg" alt="product image">
                 </div>
               </div>
               <div class="product-slide__big">
                 <div class="product-slide__big-item">
-                  <img src="images/product/item/1.jpg" alt="product image">
+                  <img src="images/product/woman/pascal-shirt/1.jpg" alt="product image">
                 </div>
                 <div class="product-slide__big-item">
-                  <img src="images/product/item/2.jpg" alt="product image">
+                  <img src="images/product/woman/pascal-shirt/2.jpg" alt="product image">
                 </div>
                 <div class="product-slide__big-item">
-                  <img src="images/product/item/3.jpg" alt="product image">
+                  <img src="images/product/woman/pascal-shirt/3.jpg" alt="product image">
                 </div>
                 <div class="product-slide__big-item">
-                  <img src="images/product/item/4.jpg" alt="product image">
+                  <img src="images/product/woman/pascal-shirt/4.jpg" alt="product image">
                 </div>
               </div>
             </div>
             <div class="product-one__content">
               <h2 class="product-one__title">
-                Emboossed Packet Backpack
+                РУБАШКА PASCAL
               </h2>
               <div class="product-one__box">
                 <div class="product-one__price">
-                  <div class="product-one__price-new"> $19.00</div>
-                  <div class="product-one__price-old">(29.00)</div>
+                  <div class="product-one__price-new"> &#8372;1350.00</div>
+                  <div class="product-one__price-old">(1550.00)</div>
                 </div>
                 <div class="product-one__item-star">
                   <div class="star" data-rateyo-rating='4'></div>
-                  <span>(22)</span>
+                  <span>(52)</span>
                 </div>
               </div>
               <p class="product-one__item-text">
-                <span class="product-one">Review:</span>
-                Lorem ipsum dolor sit amet, consectetur adipscg elit, sed do eiusmod tempor incididunt ut laborea et
-                dolore magna alqua. Quis ipsum suspendssem moa ultrices gravida.
+                <span class="product-one">Обзор:</span>
+                Белая рубашка с длинным рукавом.
+                Collared вырез.
+                Кнопка фронт.
+                Оборудованная талией.
+                наручниках втулки.
+                Не подкладке.
+                100% вискоза.
               </p>
               <form class="product-one__form product-filter" action="#">
                 <div class="product-filter__color">
                   <div class="product-filter__color-title">
-                    Color:
+                    Цвет:
                   </div>
                   <label class="product-filter__color-label">
                     <input class="product-filter__color-input" type="radio" name="color">
@@ -168,9 +209,8 @@
                   </label>
                 </div>
                 <div class="product-filter__size">
-
                   <div class="product-filter__size-title">
-                    Size:
+                    Размер:
                   </div>
                   <label class=" product-filter__size-label">
                     <input class="product-filter__size-input" type="radio" name="size">
@@ -196,7 +236,6 @@
                     <input class="product-filter__size-input" type="radio" name="size">
                     <span class="product-filter__size-checkbox">XXL</span>
                   </label>
-
                 </div>
                 <div class="product-one__info product-info">
                   <ul class="product-info__list">
@@ -205,50 +244,50 @@
                       <div class="product-info__text">11FSE7739</div>
                     </li>
                     <li class="product-info__item">
-                      <div class="product-info__title"> Categories</div>
-                      <div class="product-info__text">Woman</div>
+                      <div class="product-info__title">Категории</div>
+                      <div class="product-info__text">Женская мода</div>
                     </li>
                     <li class="product-info__item">
-                      <div class="product-info__title"> Tags</div>
+                      <div class="product-info__title">Теги</div>
                       <div class="product-info__text">
-                        <a href="#"> Fashion</a> |
-                        <a href="#"> Woman</a> |
-                        <a href="#">Sale</a>
+                        <a href="#">Мода</a> |
+                        <a href="#">Женская</a> |
+                        <a href="#">Распродажа</a>
                       </div>
                     </li>
                     <li class="product-info__item">
-                      <div class="product-info__title"> Share</div>
-                      <div class="product-info__text"><a href=""></a>
-                        <a class="product-info__link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" width="11pt" height="17pt" viewBox="0 0 11 17"
-                            version="1.1">
+                      <div class="product-info__title">Поделится</div>
+                      <div class="product-info__text">
+                        <a class="product-info__link" href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="11pt" height="17pt" viewBox="0 0 11 17" version="1.1">
                             <path
                               d="M 9.59375 9.5625 L 10.085938 6.484375 L 7.027344 6.484375 L 7.027344 4.488281 C 7.027344 3.648438 7.453125 2.828125 8.824219 2.828125 L 10.214844 2.828125 L 10.214844 0.207031 C 10.214844 0.207031 8.953125 0 7.746094 0 C 5.230469 0 3.585938 1.472656 3.585938 4.140625 L 3.585938 6.484375 L 0.785156 6.484375 L 0.785156 9.5625 L 3.585938 9.5625 L 3.585938 17 L 7.027344 17 L 7.027344 9.5625 Z M 9.59375 9.5625 " />
-                          </svg></a>
-                        <a class="product-info__link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" width="16pt" height="16pt" viewBox="0 0 16 16"
-                            version="1.1">
+                          </svg>
+                        </a>
+                        <a class="product-info__link" href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="16pt" height="16pt" viewBox="0 0 16 16" version="1.1">
                             <path
                               d="M 14.355469 4.742188 C 14.367188 4.882812 14.367188 5.027344 14.367188 5.167969 C 14.367188 9.503906 11.066406 14.496094 5.035156 14.496094 C 3.175781 14.496094 1.453125 13.960938 0 13.027344 C 0.265625 13.054688 0.519531 13.066406 0.792969 13.066406 C 2.324219 13.066406 3.734375 12.546875 4.863281 11.664062 C 3.421875 11.632812 2.214844 10.691406 1.796875 9.390625 C 2 9.421875 2.203125 9.441406 2.417969 9.441406 C 2.710938 9.441406 3.003906 9.402344 3.277344 9.328125 C 1.777344 9.023438 0.648438 7.707031 0.648438 6.113281 L 0.648438 6.070312 C 1.085938 6.316406 1.59375 6.46875 2.132812 6.488281 C 1.25 5.898438 0.671875 4.894531 0.671875 3.757812 C 0.671875 3.148438 0.832031 2.589844 1.117188 2.101562 C 2.730469 4.089844 5.15625 5.390625 7.878906 5.53125 C 7.828125 5.289062 7.796875 5.035156 7.796875 4.78125 C 7.796875 2.976562 9.257812 1.503906 11.074219 1.503906 C 12.019531 1.503906 12.871094 1.898438 13.472656 2.539062 C 14.214844 2.394531 14.921875 2.121094 15.554688 1.746094 C 15.308594 2.507812 14.792969 3.148438 14.113281 3.554688 C 14.773438 3.480469 15.410156 3.300781 16 3.046875 C 15.554688 3.695312 14.996094 4.273438 14.355469 4.742188 Z M 14.355469 4.742188 " />
-                          </svg></a>
-
+                          </svg>
+                        </a>
                       </div>
                     </li>
                   </ul>
                 </div>
                 <input class="product-one__num" type="number" value="1" min="1">
-                <button class="product-one__item-btn" type="submit"> Add to cart</button>
+                <button class="product-one__item-btn" type="submit">В корзину</button>
               </form>
-
             </div>
           </div>
         </div>
         <div class="product-tabs">
-
           <div class="product-tabs__top">
-            <a class=" product-tabs__top-item product-tabs__top-item--active" href="#tab-1">Description</a>
-            <a class="product-tabs__top-item" href="#tab-2">Additional information</a>
-            <a class="product-tabs__top-item" href="#tab-3">Reviews</a>
+            <a class=" product-tabs__top-item product-tabs__top-item--active" href="#tab-1">Описание</a>
+            <a class="product-tabs__top-item" href="#tab-2">
+              Дополнительная информация</a>
+            <a class="product-tabs__top-item" href="#tab-3">Отзывы</a>
           </div>
           <div class="product-tabs__content">
             <div class="product-tabs__content-item " id="tab-1">
@@ -260,65 +299,96 @@
                 <img class="comments__img" src="images/avatar/1.jpg" alt="avatar">
                 <div class="comments__content">
                   <div class="comments__content-top">
-                    <p class="comments__content-name">Michle Jhon</p>
-                    <p class="comments__content-date">2 days ago</p>
+                    <p class="comments__content-name">Ольга Погребняк</p>
+                    <p class="comments__content-date">2 дня назад</p>
                     <p class="star comments__content-star" data-rateyo-rating="4"></p>
                   </div>
                   <p class="comments__content-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Qus ipsum speissei ultrices gravida. Risus commodo viverra maeenas accumsan
-                    lacus vel facilisis.
+                    Эта прелестная кофточка появилась в моём гардеробе прошлой весной вместе с Чеширчиком . Ещё в
+                    магазине привлёк её необычный дизайн и удобство, поскольку, благодаря особому покрою, всегда будет
+                    закрыта поясница. Для меня это важно.
                   </p>
-                  <a class="comments__content-reply" href="#">Reply</a>
+                  <a class="comments__content-reply" href="#">Ответить</a>
                 </div>
               </div>
               <div class="comments">
                 <img class="comments__img" src="images/avatar/3.jpg" alt="avatar">
                 <div class="comments__content">
                   <div class="comments__content-top">
-                    <p class="comments__content-name">Michle Jhon</p>
-                    <p class="comments__content-date">2 days ago</p>
+                    <p class="comments__content-name">Олена Матковська</p>
+                    <p class="comments__content-date">3 неделю назад</p>
                     <p class="star comments__content-star" data-rateyo-rating="4"></p>
                   </div>
                   <p class="comments__content-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Qus ipsum speissei ultrices gravida. Risus commodo viverra maeenas accumsan
-                    lacus vel facilisis.
+                    Доброго времени суток. Купила кофтачку на лето, но и проносила теплую осень. Кофта лёгкая, удобная.
+                    Подходит для тренировок на свежем воздухе. Кофтачку можно одеть с джинсами на высокой талии, Кофты
+                    разных цветов, и рисунков.
                   </p>
-                  <a class="comments__content-reply" href="#">Reply</a>
+                  <a class="comments__content-reply" href="#">Ответить</a>
                 </div>
               </div>
               <div class="comments">
                 <img class="comments__img" src="images/avatar/2.jpg" alt="avatar">
                 <div class="comments__content">
                   <div class="comments__content-top">
-                    <p class="comments__content-name">Michle Jhon</p>
-                    <p class="comments__content-date">2 days ago</p>
+                    <p class="comments__content-name">Черная Марина
+                    </p>
+                    <p class="comments__content-date">20 февраля 2021</p>
                     <p class="star comments__content-star" data-rateyo-rating="4"></p>
                   </div>
                   <p class="comments__content-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Qus ipsum speissei ultrices gravida. Risus commodo viverra maeenas accumsan
-                    lacus vel facilisis.
+                    Вчера заказала, сегодня забрала!!! Просто бомба!!!!! Соответствует фото и описанию! Качество супер
+                    за не дорого!!! Советую
                   </p>
-                  <a class="comments__content-reply" href="#">Reply</a>
+                  <a class="comments__content-reply" href="#">Ответить</a>
                 </div>
               </div>
               <form class="comments-form" action="#">
                 <p class="comments-form__title">
-                  Add your review
+                  Добавьте свой отзыв
                 </p>
                 <div class="comments-form__rating">
-                  <span class="comments-form__rating-title">Your Rating</span>
+                  <span class="comments-form__rating-title">Ваш рейтинг</span>
                   <label class="comments-form__label">
                     <input class="comments-form__input" type="radio" name="star">
-                    <span class="comments-form__radio"> <svg width="18pt" height="16pt" viewBox="0 0 18 16"
-                        version="1.1">
-
+                    <span class="comments-form__radio">
+                      <svg width="18pt" height="16pt" viewBox="0 0 18 16" version="1.1">
+                        <path style=" stroke:none;fill-rule:nonzero;;fill-opacity:1;"
+                          d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                      </svg>
+                    </span>
+                  </label>
+                  <label class="comments-form__label">
+                    <input class="comments-form__input" type="radio" name="star">
+                    <span class="comments-form__radio">
+                      <svg width="18pt" height="16pt" viewBox="0 0 18 16" version="1.1">
+                        <path style=" stroke:none;fill-rule:nonzero;;fill-opacity:1;"
+                          d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                      </svg>
+                      <svg width="18pt" height="16pt" viewBox="0 0 18 16" version="1.1">
+                        <path style=" stroke:none;fill-rule:nonzero;;fill-opacity:1;"
+                          d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                      </svg>
+                    </span>
+                  </label>
+                  <label class="comments-form__label">
+                    <input class="comments-form__input" type="radio" name="star">
+                    <span class="comments-form__radio">
+                      <svg width="18pt" height="16pt" viewBox="0 0 18 16" version="1.1">
+                        <path style=" stroke:none;fill-rule:nonzero;;fill-opacity:1;"
+                          d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                      </svg>
+                      <svg width="18pt" height="16pt" viewBox="0 0 18 16" version="1.1">
                         <path style=" stroke:none;fill-rule:nonzero;;fill-opacity:1;"
                           d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
 
-                      </svg></span>
+                      </svg>
+                      <svg width="18pt" height="16pt" viewBox="0 0 18 16" version="1.1">
+                        <path style=" stroke:none;fill-rule:nonzero;;fill-opacity:1;"
+                          d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+
+                      </svg>
+                    </span>
                   </label>
                   <label class="comments-form__label">
                     <input class="comments-form__input" type="radio" name="star">
@@ -327,95 +397,62 @@
                         <path style=" stroke:none;fill-rule:nonzero;;fill-opacity:1;"
                           d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
 
-                      </svg><svg width="18pt" height="16pt" viewBox="0 0 18 16" version="1.1">
-
+                      </svg>
+                      <svg width="18pt" height="16pt" viewBox="0 0 18 16" version="1.1">
                         <path style=" stroke:none;fill-rule:nonzero;;fill-opacity:1;"
                           d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
 
                       </svg>
+                      <svg width="18pt" height="16pt" viewBox="0 0 18 16" version="1.1">
+                        <path style=" stroke:none;fill-rule:nonzero;;fill-opacity:1;"
+                          d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
 
+                      </svg>
+                      <svg width="18pt" height="16pt" viewBox="0 0 18 16" version="1.1">
+                        <path style=" stroke:none;fill-rule:nonzero;;fill-opacity:1;"
+                          d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+
+                      </svg>
                     </span>
                   </label>
                   <label class="comments-form__label">
-                    <input class="comments-form__input" type="radio" name="star">
-                    <span class="comments-form__radio"><svg width="18pt" height="16pt" viewBox="0 0 18 16"
-                        version="1.1">
-
-                        <path style=" stroke:none;fill-rule:nonzero;;fill-opacity:1;"
-                          d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
-
-                      </svg><svg width="18pt" height="16pt" viewBox="0 0 18 16" version="1.1">
-
-                        <path style=" stroke:none;fill-rule:nonzero;;fill-opacity:1;"
-                          d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
-
-                      </svg><svg width="18pt" height="16pt" viewBox="0 0 18 16" version="1.1">
-
-                        <path style=" stroke:none;fill-rule:nonzero;;fill-opacity:1;"
-                          d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
-
-                      </svg></span>
-                  </label>
-                  <label class="comments-form__label">
-                    <input class="comments-form__input" type="radio" name="star">
-                    <span class="comments-form__radio"><svg width="18pt" height="16pt" viewBox="0 0 18 16"
-                        version="1.1">
-                        <path style=" stroke:none;fill-rule:nonzero;;fill-opacity:1;"
-                          d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
-
-                      </svg><svg width="18pt" height="16pt" viewBox="0 0 18 16" version="1.1">
-
-                        <path style=" stroke:none;fill-rule:nonzero;;fill-opacity:1;"
-                          d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
-
-                      </svg><svg width="18pt" height="16pt" viewBox="0 0 18 16" version="1.1">
-
-                        <path style=" stroke:none;fill-rule:nonzero;;fill-opacity:1;"
-                          d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
-
-                      </svg><svg width="18pt" height="16pt" viewBox="0 0 18 16" version="1.1">
-
-                        <path style=" stroke:none;fill-rule:nonzero;;fill-opacity:1;"
-                          d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
-
-                      </svg></span>
-                  </label>
-                  <label class="comments-form__label">
                     <input class="comments-form__input" type="radio" name="star" checked>
-                    <span class="comments-form__radio"><svg width="18pt" height="16pt" viewBox="0 0 18 16"
-                        version="1.1">
+                    <span class="comments-form__radio">
+                      <svg width="18pt" height="16pt" viewBox="0 0 18 16" version="1.1">
                         <path style=" stroke:none;fill-rule:nonzero;;fill-opacity:1;"
                           d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
 
-                      </svg><svg width="18pt" height="16pt" viewBox="0 0 18 16" version="1.1">
-
+                      </svg>
+                      <svg width="18pt" height="16pt" viewBox="0 0 18 16" version="1.1">
                         <path style=" stroke:none;fill-rule:nonzero;;fill-opacity:1;"
                           d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
 
-                      </svg><svg width="18pt" height="16pt" viewBox="0 0 18 16" version="1.1">
-
+                      </svg>
+                      <svg width="18pt" height="16pt" viewBox="0 0 18 16" version="1.1">
                         <path style=" stroke:none;fill-rule:nonzero;;fill-opacity:1;"
                           d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
 
-                      </svg><svg width="18pt" height="16pt" viewBox="0 0 18 16" version="1.1">
-
+                      </svg>
+                      <svg width="18pt" height="16pt" viewBox="0 0 18 16" version="1.1">
                         <path style=" stroke:none;fill-rule:nonzero;;fill-opacity:1;"
                           d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
 
-                      </svg><svg width="18pt" height="16pt" viewBox="0 0 18 16" version="1.1">
-
+                      </svg>
+                      <svg width="18pt" height="16pt" viewBox="0 0 18 16" version="1.1">
                         <path style=" stroke:none;fill-rule:nonzero;;fill-opacity:1;"
                           d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
 
-                      </svg></span>
+                      </svg>
+                    </span>
                   </label>
                 </div>
                 <div class="comments-form__box-input">
-                  <input class="comments-form__text-input" type="text" placeholder="Your name">
-                  <input class="comments-form__text-input" type="text" placeholder="E-mail address">
+                  <input class="comments-form__text-input" type="text" placeholder="Ваше имя">
+                  <input class="comments-form__text-input" type="text" placeholder="E-mail адрес">
                 </div>
-                <textarea class="comments-form__textarea" placeholder="Your text here" required></textarea>
-                <button class="comments-form__btn" type="submit">Leave Review</button>
+                <textarea class="comments-form__textarea" placeholder="Ваша комментарий" required></textarea>
+                <button class="comments-form__btn" type="submit">
+                  Оставить отзыв</button>
               </form>
             </div>
           </div>
@@ -424,84 +461,78 @@
     </section>
     <section class="related">
       <div class="container">
-        <h3 class="title related__title">RELATED PRODUCTS</h3>
+        <h3 class="title related__title">МОЖЕТ ПОНРАВИТЬСЯ</h3>
         <div class="related__items">
-          <div class="product-item">
+          <a class="product-item" href="#">
             <div class="product-item__img-box">
               <img class="product-item__images" src="images/content/related/1.jpg" alt="product">
-
             </div>
             <div class="product-item__wrapper-box">
               <div class="product-item__box">
                 <div class="star" data-rateyo-rating="4"></div>
                 <h4 class="product-item__title">
-                  Baby Girls Dress Designs
+                  ИЗЯЩНЫЙ УКОРОЧЕННЫЙ ТОП
                 </h4>
                 <div class="product-item__price">
-                  <div class="product-item__old-price">$99.99</div>
-                  <div class="product-item__new-price">$79.99</div>
+                  <div class="product-item__old-price">&#8372;699.99</div>
+                  <div class="product-item__new-price">&#8372;879.99</div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="product-item product-item--sale">
+          </a>
+          <a class="product-item product-item--sale" href="#">
             <div class="product-item__img-box">
               <img class="product-item__images" src="images/content/related/2.jpg" alt="product">
-
             </div>
             <div class="product-item__wrapper-box">
               <div class="product-item__box">
                 <div class="star" data-rateyo-rating="4"></div>
                 <h4 class="product-item__title">
-                  Baby Girls Dress Designs
+                  АШТЫН ТРИКОТАЖ (ЗЕЛЕНЫЙ)
                 </h4>
                 <div class="product-item__price">
-                  <div class="product-item__old-price">$99.99</div>
-                  <div class="product-item__new-price">$79.99</div>
+                  <div class="product-item__old-price">&#8372;899.99</div>
+                  <div class="product-item__new-price">&#8372;799.99</div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="product-item ">
+          </a>
+          <a class="product-item" href="#">
             <div class="product-item__img-box">
               <img class="product-item__images" src="images/content/related/3.jpg" alt="product">
-
             </div>
             <div class="product-item__wrapper-box">
               <div class="product-item__box">
                 <div class="star" data-rateyo-rating="4"></div>
                 <h4 class="product-item__title">
-                  Baby Girls Dress Designs
+                  СОЛНЦЕЗАЩИТНЫЕ ОЧКИ ORIANA (ЧЕРЕПАХА)
                 </h4>
                 <div class="product-item__price">
-                  <div class="product-item__old-price">$99.99</div>
-                  <div class="product-item__new-price">$79.99</div>
+                  <div class="product-item__old-price">&#8372;499.99</div>
+                  <div class="product-item__new-price">&#8372;699.99</div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="product-item product-item--sale">
+          </a>
+          <a class="product-item product-item--sale" href="#">
             <div class="product-item__img-box">
               <img class="product-item__images" src="images/content/related/4.jpg" alt="product">
-
             </div>
             <div class="product-item__wrapper-box">
               <div class="product-item__box">
                 <div class="star" data-rateyo-rating="4"></div>
                 <h4 class="product-item__title">
-                  Baby Girls Dress Designs
+                  PRETTY SIGHT KNIT (ТЕМНО-СЕРЫЙ)
                 </h4>
                 <div class="product-item__price">
-                  <div class="product-item__old-price">$99.99</div>
-                  <div class="product-item__new-price">$79.99</div>
+                  <div class="product-item__old-price">&#8372;1399.99</div>
+                  <div class="product-item__new-price">&#8372;1259.99</div>
                 </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
-
       </div>
-
     </section>
 
   </main>
@@ -511,11 +542,11 @@
       <div class="footer-top">
         <div class="footer-top__contact">
           <a class="logo footer-top__logo" href="#">
-            <img class="logo__img" src="images/logo.png" alt="logo">
+            <img class="logo__img" src="images/logo.svg" alt="logo">
           </a>
-          <a class="footer-top__address" href="#">No. 342 - London Oxford Street,
-            012 United States</a>
-          <a class="footer-top__eamil" href="mailto:Youremail@gmail.com"> Youremail@gmail.com</a>
+          <a class="footer-top__address" href="https://goo.gl/maps/Ajxt13G4KwZj3Kq77" target="_blank">вул.Челюскінців,
+            189E, Донецьк, Донецька область, 83048</a>
+          <a class="footer-top__eamil" href="mailto:Youremail@gmail.com"> kenlue@gmail.com</a>
           <a class="footer-top__phone" href="tel:+02838388393"> +0283 838 8393</a>
           <ul class="footer-top__social-list">
             <li class="footer-top__social-item">
@@ -567,59 +598,62 @@
           </ul>
         </div>
         <div class="footer-top__nav">
-          <h6 class="footer-top__title">Useful Links</h6>
+          <h6 class="footer-top__title">Cсылки</h6>
           <ul class="footer-top__list">
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">About Us</a>
+              <a class="footer-top__link" href="#">
+                О нас</a>
             </li>
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Privacy Policy</a>
+              <a class="footer-top__link" href="#">
+                Политика конфиденциальности</a>
             </li>
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Terms & Conditions</a>
+              <a class="footer-top__link" href="#">
+                Условия и положения</a>
             </li>
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Contact Us</a>
+              <a class="footer-top__link" href="#">Связаться с нами</a>
             </li>
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Help & Support</a>
+              <a class="footer-top__link" href="#">Помощь и поддержка</a>
             </li>
           </ul>
         </div>
         <div class="footer-top__nav">
-          <h6 class="footer-top__title">My Account</h6>
+          <h6 class="footer-top__title">Мой аккаунт</h6>
           <ul class="footer-top__list">
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">My Account</a>
+              <a class="footer-top__link" href="#">Мой аккаунт</a>
             </li>
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">My Cart</a>
+              <a class="footer-top__link" href="#">Моя корзина</a>
             </li>
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">My WIshlist</a>
+              <a class="footer-top__link" href="#">
+                Список моих желаний</a>
             </li>
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Registration</a>
+              <a class="footer-top__link" href="#">Hегистрация</a>
             </li>
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Check Out</a>
+              <a class="footer-top__link" href="#">Оплатить</a>
             </li>
           </ul>
         </div>
         <div class="footer-top__forms">
-          <h6 class="footer-top__title">Subscribe Our Newsletter</h6>
+          <h6 class="footer-top__title">Подпишитесь на нашу рассылку новостей</h6>
           <p class="footer-top__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+            Будьте в курсі наших акцій, підпишіться на розсилку.</p>
           <form class="footer-top__form" action="#">
-            <input class="footer-top__form-input" type="email" placeholder="Your email address" required>
-            <button class="footer-top__form-btn" type="submit">Subscribe</button>
+            <input class="footer-top__form-input" type="email" placeholder="Электронная почта" required>
+            <button class="footer-top__form-btn" type="submit">Подписатся</button>
           </form>
         </div>
       </div>
       <div class="footer-bottom">
         <p class="footer-bottom__copy">
-          © 2019 CodeAstrology. All Rights Reserved.
+          © 2021 CodeAstrology. All Rights Reserved.
         </p>
         <div class="footer-bottom__accept">
           We Accept
@@ -629,7 +663,6 @@
         </div>
       </div>
     </div>
-
   </footer>
 
 

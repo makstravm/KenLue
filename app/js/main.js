@@ -160,11 +160,10 @@ $(function () {
 
 });
 let map;
-
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 40.77327033342351, lng: -74.00343373044694 },
-        zoom: 13,
+        center: { lat: 48.02135315756307, lng: 37.81016841103472 },
+        zoom: 16,
         styles:
             [
                 {

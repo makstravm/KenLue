@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Marcho</title>
+  <title>KenLue</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -12,34 +12,67 @@
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        <a class="logo" href="#"><img class="logo__img" src="images/logo.png" alt="logo"></a>
+        <a class="logo" href="index.html">
+          <img class="logo__img" src="images/logo.svg" alt="logo">
+        </a>
         <nav class="menu">
           <button class="menu__btn"><span></span></button>
           <ul class="menu__list">
             <li class="menu__list-item">
-              <a class="menu__list-link menu__list-link--active" href="#">HOME</a>
+              <a class="menu__list-link " href="index.html">Главная</a>
+            </li>
+            <li class="menu__list-item menu__list-item--catalog">
+              <a class="menu__list-link" href="shop.html">Каталог</a>
+              <ul class="menu__list-catalog">
+                <li class="menu__catalog-list">
+                  <a class="menu__catalog-link" href="shop.html">
+                    Женская мода
+                  </a>
+                </li>
+                <li class="menu__catalog-list">
+                  <a class="menu__catalog-link" href="shop.html">
+                    Мужская мода
+                  </a>
+                </li>
+                <li class="menu__catalog-list">
+                  <a class="menu__catalog-link" href="shop.html">
+                    Одежда & аксессуары
+                  </a>
+                </li>
+                <li class="menu__catalog-list">
+                  <a class="menu__catalog-link" href="shop.html">
+                    Обувь & украшения
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__list-item ">
+              <a class="menu__list-link menu__list-link--active" href="blog.html">
+                Блог
+              </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">SHOP</a>
+              <a class="menu__list-link" href="#">
+                О нас
+              </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">PAGE</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">BLOG</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">CONTACT</a>
+              <a class="menu__list-link" href="contacts.html">
+                Контакты
+              </a>
             </li>
           </ul>
         </nav>
         <div class="user-nav">
-          <a class="user-nav__link" href="#">
+          <a class="user-nav__link" href="login.html">
             <img class="user-nav__link-img" src="images/icons/user.svg" alt="user icon">
           </a>
-          <a class="user-nav__link" href="#">
+          <span class="user-nav__link user-nav__link-search">
             <img class="user-nav__link-img" src="images/icons/search.svg" alt="user icon">
-          </a>
+            <form class="user-nav__form" action="#">
+              <input class="user-nav__input" type="text" placeholder="Поиск товаров.....">
+            </form>
+          </span>
           <a class="user-nav__link" href="#">
             <img class="user-nav__link-img" src="images/icons/heart.svg" alt="user icon">
             <span class="user-nav__num">3</span>
@@ -57,14 +90,14 @@
     <section class="top">
       <div class="top__container" style="background-image: url('images/top-bg.jpg')">
         <div class="container">
-          <h2 class="top-title title">BLOG STANDARD</h2>
+          <h2 class="top-title title">БЛОГ</h2>
           <div class="breadcrumbs">
             <ul class="breadcrumbs__list">
               <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="#">Home</a>
+                <a class="breadcrumbs__link" href="index.html">Главная</a>
               </li>
               <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="#">Blog page</a>
+                <a class="breadcrumbs__link" href="blog.html">Блог</a>
               </li>
             </ul>
           </div>
@@ -76,51 +109,46 @@
         <div class="blog-page__inner">
           <div class="blog-page__content">
             <div class="blog-page__item">
-              <a class="blog-page__item-link" href="#">
+              <a class="blog-page__item-link" href="blog-one.html">
                 <img class="blog-page__img" src="images/content/blog/page/1.jpg" alt="blog">
               </a>
               <div class="blog-page__item-box">
                 <h4 class="blog-page__item-title">
-                  <a class="blog-page__item-link" href="#">
-                    Be prepared to sweat a lot, but at least in the Southern regions there’s a good chance you’ll get to
-                    enjoy!
+                  <a class="blog-page__item-link" href="blog-one.html">
+                    Мода зима, весна, лето 2021: новые тренды для женщин.
                   </a>
                 </h4>
-
                 <div class="blog-box">
-                  <a class="blog-box__author" href="#">By Admin</a>
-                  <div class="blog-box__date">10 January, 2020</div>
+                  <a class="blog-box__author" href="#">Гурич К.</a>
+                  <div class="blog-box__date">1 апреля 2021</div>
                 </div>
                 <p class="blog-page__item-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodoami viverra maycenas
-                  acchmsan lacus vel facilisis.
+                  Асимметрия по-прежнему будет на пике популярности. Ассиметричные детали могут присутствовать в верхней одежде, платьях, юбках.
                 </p>
               </div>
             </div>
             <div class="blog-page__item blog-page__item--slider">
               <div class="blog-page__slider">
-                <img class="blog-page__img" src="images/content/blog/page/2.jpg" alt="blog">
-                <img class="blog-page__img" src="images/content/blog/page/1.jpg" alt="blog">
-                <img class="blog-page__img" src="images/content/blog/page/3.jpg" alt="blog">
+                <img class="blog-page__img" src="images/content/blog/page/slider/1.jpg" alt="blog">
+                <img class="blog-page__img" src="images/content/blog/page/slider/2.jpg" alt="blog">
+                <img class="blog-page__img" src="images/content/blog/page/slider/3.jpg" alt="blog">
               </div>
 
               <div class="blog-page__item-box">
                 <h4 class="blog-page__item-title">
                   <a class="blog-page__item-link" href="#">
-                    Be prepared to sweat a lot, but at least in the Southern regions there’s a good chance you’ll get to
-                    enjoy!
+                    Базовый гардероб 2021-2022: топ-12 вещей, которые обязательно должны присутствовать в Вашем шкафчике
                   </a>
                 </h4>
 
                 <div class="blog-box">
-                  <a class="blog-box__author" href="#">By Admin</a>
-                  <div class="blog-box__date">10 January, 2020</div>
+                  <a class="blog-box__author" href="#">Малышева Ю.</a>
+                  <div class="blog-box__date">10 Марта 2020</div>
                 </div>
                 <p class="blog-page__item-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodoami viverra maycenas
-                  acchmsan lacus vel facilisis.
+                  Базовый гардероб может быть достаточно разнообразным. Все зависит от Вашего стиля жизни, фигуры, типа
+                  внешности, климата и возраста. В любой из нас хотя бы раз в жизни складывалась ситуация, когда надо
+                  одеться в спешке, а в голове ступор.
                 </p>
               </div>
             </div>
@@ -131,19 +159,17 @@
               <div class="blog-page__item-box">
                 <h4 class="blog-page__item-title">
                   <a class="blog-page__item-link" href="#">
-                    Be prepared to sweat a lot, but at least in the Southern regions there’s a good chance you’ll get to
-                    enjoy!
+                    Женские туфли 2021-2022: модные новинки с фото-примерами
                   </a>
                 </h4>
-
                 <div class="blog-box">
                   <a class="blog-box__author" href="#">By Admin</a>
-                  <div class="blog-box__date">10 January, 2020</div>
+                  <div class="blog-box__date">13 Апреля 2021</div>
                 </div>
                 <p class="blog-page__item-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodoami viverra maycenas
-                  acchmsan lacus vel facilisis.
+                  Красивые туфли для женщин всегда считались чем-то большим, нежели обычная пара обуви. Дизайнеры
+                  создают все больше стильных вариаций женских туфель, дополняя базовые модели разнообразными элементами
+                  декора.
                 </p>
               </div>
             </div>
@@ -151,19 +177,17 @@
               <div class="blog-page__item-box">
                 <h4 class="blog-page__item-title">
                   <a class="blog-page__item-link" href="#">
-                    Be prepared to sweat a lot, but at least in the Southern regions there’s a good chance you’ll get to
-                    enjoy!
+                    Как носить кожаные брюки девушкам plus-size: пример модели Эшли Грэм.
                   </a>
                 </h4>
-
                 <div class="blog-box">
-                  <a class="blog-box__author" href="#">By Admin</a>
-                  <div class="blog-box__date">10 January, 2020</div>
+                  <a class="blog-box__author" href="#">Лебедева И.</a>
+                  <div class="blog-box__date">28 Апрея 2021</div>
                 </div>
                 <p class="blog-page__item-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodoami viverra maycenas
-                  acchmsan lacus vel facilisis.
+                  Известная модель plus-size знает, как привлечь к себе внимание. В прошлом Эшли Грэм взбудоражила сеть
+                  голыми фото, ну а теперь примерила дерзкий тренд — кожаные брюки. Своим образом она доказала, что
+                  такие идут не только девушкам со стандартными параметрами.
                 </p>
               </div>
             </div>
@@ -171,21 +195,20 @@
           <div class="blog-page__aside">
             <div class="filter-search filter__item">
               <h3 class=" filter__title">
-                Search
+                Поиск
               </h3>
               <form class="filter-search__form" action="#">
-                <input class="filter-search__input" type="text" placeholder="Search your keyword....">
+                <input class="filter-search__input" type="text" placeholder="Введите ключевое слово....">
                 <button class="filter-search__btn" type="submit"><img src="images/icons/search-white.svg"
                     alt="search icon"></button>
               </form>
             </div>
-
             <div class="person">
               <img class="person__img" src="images/avatar/ceo.jpg" alt="avatar">
-              <div class="person__name">Tom D. Maianay</div>
+              <div class="person__name">Франко Скотт</div>
               <div class="person__position">CEO & Founder</div>
-              <div class="person__text">Lorem ipsum dolor sit amet, consectetum adipiscing eit, sed do eiusmod temporary
-                incididunt ut labore et dolore magnaamo aliqua. Qus ipsum suspendisse ultrices an gravida. Risus commodo
+              <div class="person__text">Итальянский модельер, прославившийся своим красочным, живым, вызывающим и в
+                некотором роде клоунским стилем.
               </div>
               <div class="person__social">
                 <a class="person__socila-link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
@@ -203,10 +226,9 @@
 
               </div>
             </div>
-
             <div class="latest-post">
               <h3 class="latest-post__title">
-                latest post
+                последний пост
               </h3>
               <div class="latest-post__item">
                 <a class="latest-post__img-link" href="#">
@@ -215,11 +237,11 @@
                 <div class="latest-post__box">
                   <a class="latest-post__title-link" href="#">
                     <h5 class="latest-post__box-title">
-                      Lorem ipsum dolor suitabl amet, adiping elit.
+                      Как убрать царапины на лакированных туфлях?
                     </h5>
                   </a>
                   <div class="latest-post__date">
-                    16 Feb, 2019
+                    31 Апреля 2021
                   </div>
                 </div>
               </div>
@@ -230,11 +252,11 @@
                 <div class="latest-post__box">
                   <a class="latest-post__title-link" href="#">
                     <h5 class="latest-post__box-title">
-                      Lorem ipsum dolor suitabl amet, adiping elit.
+                      Как почистить кожаную сумку: испытанный способ
                     </h5>
                   </a>
                   <div class="latest-post__date">
-                    16 Feb, 2019
+                    31 Апреля 2021
                   </div>
                 </div>
               </div>
@@ -245,11 +267,11 @@
                 <div class="latest-post__box">
                   <a class="latest-post__title-link" href="#">
                     <h5 class="latest-post__box-title">
-                      Lorem ipsum dolor suitabl amet, adiping elit.
+                      Сезонные проблемы с волосами и их решение
                     </h5>
                   </a>
                   <div class="latest-post__date">
-                    16 Feb, 2019
+                    31 Апреля 2021
                   </div>
                 </div>
               </div>
@@ -260,117 +282,110 @@
                 <div class="latest-post__box">
                   <a class="latest-post__title-link" href="#">
                     <h5 class="latest-post__box-title">
-                      Lorem ipsum dolor suitabl amet, adiping elit.
+                      Как выглядеть стильно в любом возрасте:
                     </h5>
                   </a>
                   <div class="latest-post__date">
-                    16 Feb, 2019
+                    31 Апреля 2021
                   </div>
                 </div>
               </div>
             </div>
-
             <div class="filter__item filter-category">
               <h3 class="filter__title">
-                CATEGORY
+                КАТЕГОРИИ
               </h3>
               <form class="filter-category__form" action="#">
                 <label class="filter-category__label">
                   <input class="filter-category__input" type="checkbox">
                   <div class="filter-category__checkbox">
                     <span>Woman</span>
-                    <span>48</span>
+                    <span>26</span>
                   </div>
                 </label>
                 <label class="filter-category__label">
                   <input class="filter-category__input" type="checkbox">
                   <div class="filter-category__checkbox">
                     <span>Man</span>
-                    <span>30</span>
+                    <span>17</span>
                   </div>
                 </label>
                 <label class="filter-category__label">
                   <input class="filter-category__input" type="checkbox" checked>
                   <div class="filter-category__checkbox">
                     <span>Sale Products</span>
-                    <span>92</span>
-                  </div>
-                </label>
-                <label class="filter-category__label">
-                  <input class="filter-category__input" type="checkbox">
-                  <div class="filter-category__checkbox">
-                    <span>Fashion</span>
-                    <span>121</span>
-                  </div>
-                </label>
-                <label class="filter-category__label">
-                  <input class="filter-category__input" type="checkbox">
-                  <div class="filter-category__checkbox">
-                    <span>Hot Dresses</span>
                     <span>52</span>
                   </div>
                 </label>
                 <label class="filter-category__label">
                   <input class="filter-category__input" type="checkbox">
                   <div class="filter-category__checkbox">
+                    <span>Fashion</span>
+                    <span>78</span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>Hot Dresses</span>
+                    <span>42</span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
                     <span>Accessories</span>
-                    <span>88</span>
+                    <span>76</span>
                   </div>
                 </label>
               </form>
             </div>
-
             <div class="filter__item filter-popular ">
               <h3 class="filter__title filter-popular__title">
-                Popular Tags
+                Популярные теги
               </h3>
               <form class="filter-popular__form" action="#">
                 <label class="filter-popular__label">
                   <input class="filter-popular__input" type="checkbox">
                   <span class="filter-popular__checkbox">
-                    Sweetshirt
+                    Фуфайка
+                  </span>
+                </label> <label class="filter-popular__label">
+                  <input class="filter-popular__input" type="checkbox">
+                  <span class="filter-popular__checkbox">
+                    Мода
                   </span>
                 </label>
                 <label class="filter-popular__label">
                   <input class="filter-popular__input" type="checkbox">
                   <span class="filter-popular__checkbox">
-                    Man Accessories
+                    Мужские аксессуары
                   </span>
                 </label>
                 <label class="filter-popular__label">
                   <input class="filter-popular__input" type="checkbox">
                   <span class="filter-popular__checkbox">
-                    Fashion
+                    Поло
                   </span>
                 </label>
                 <label class="filter-popular__label">
                   <input class="filter-popular__input" type="checkbox">
                   <span class="filter-popular__checkbox">
-                    Polo
+                    Футболка
                   </span>
                 </label>
                 <label class="filter-popular__label">
                   <input class="filter-popular__input" type="checkbox">
                   <span class="filter-popular__checkbox">
-                    T-Shirt
-                  </span>
-                </label>
-                <label class="filter-popular__label">
-                  <input class="filter-popular__input" type="checkbox">
-                  <span class="filter-popular__checkbox">
-                    Jewellery
+                    Ювелирные изделия
                   </span>
                 </label>
               </form>
             </div>
           </div>
-
         </div>
       </div>
     </section>
-
-
-
   </main>
 
   <footer class="footer">
@@ -378,11 +393,10 @@
       <div class="footer-top">
         <div class="footer-top__contact">
           <a class="logo footer-top__logo" href="#">
-            <img class="logo__img" src="images/logo.png" alt="logo">
+            <img class="logo__img" src="images/logo.svg" alt="logo">
           </a>
-          <a class="footer-top__address" href="#">No. 342 - London Oxford Street,
-            012 United States</a>
-          <a class="footer-top__eamil" href="mailto:Youremail@gmail.com"> Youremail@gmail.com</a>
+          <a class="footer-top__address" href="https://goo.gl/maps/Ajxt13G4KwZj3Kq77" target="_blank">вул.Челюскінців, 189E, Донецьк, Донецька область, 83048</a>
+          <a class="footer-top__eamil" href="mailto:Youremail@gmail.com"> kenlue@gmail.com</a>
           <a class="footer-top__phone" href="tel:+02838388393"> +0283 838 8393</a>
           <ul class="footer-top__social-list">
             <li class="footer-top__social-item">
@@ -434,59 +448,62 @@
           </ul>
         </div>
         <div class="footer-top__nav">
-          <h6 class="footer-top__title">Useful Links</h6>
+          <h6 class="footer-top__title">Cсылки</h6>
           <ul class="footer-top__list">
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">About Us</a>
+              <a class="footer-top__link" href="#">
+                О нас</a>
             </li>
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Privacy Policy</a>
+              <a class="footer-top__link" href="#">
+                Политика конфиденциальности</a>
             </li>
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Terms & Conditions</a>
+              <a class="footer-top__link" href="#">
+                Условия и положения</a>
             </li>
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Contact Us</a>
+              <a class="footer-top__link" href="#">Связаться с нами</a>
             </li>
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Help & Support</a>
+              <a class="footer-top__link" href="#">Помощь и поддержка</a>
             </li>
           </ul>
         </div>
         <div class="footer-top__nav">
-          <h6 class="footer-top__title">My Account</h6>
+          <h6 class="footer-top__title">Мой аккаунт</h6>
           <ul class="footer-top__list">
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">My Account</a>
+              <a class="footer-top__link" href="#">Мой аккаунт</a>
             </li>
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">My Cart</a>
+              <a class="footer-top__link" href="#">Моя корзина</a>
             </li>
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">My WIshlist</a>
+              <a class="footer-top__link" href="#">
+                Список моих желаний</a>
             </li>
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Registration</a>
+              <a class="footer-top__link" href="#">Hегистрация</a>
             </li>
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Check Out</a>
+              <a class="footer-top__link" href="#">Оплатить</a>
             </li>
           </ul>
         </div>
         <div class="footer-top__forms">
-          <h6 class="footer-top__title">Subscribe Our Newsletter</h6>
+          <h6 class="footer-top__title">Подпишитесь на нашу рассылку новостей</h6>
           <p class="footer-top__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+            Будьте в курсі наших акцій, підпишіться на розсилку.</p>
           <form class="footer-top__form" action="#">
-            <input class="footer-top__form-input" type="email" placeholder="Your email address" required>
-            <button class="footer-top__form-btn" type="submit">Subscribe</button>
+            <input class="footer-top__form-input" type="email" placeholder="Электронная почта" required>
+            <button class="footer-top__form-btn" type="submit">Подписатся</button>
           </form>
         </div>
       </div>
       <div class="footer-bottom">
         <p class="footer-bottom__copy">
-          © 2019 CodeAstrology. All Rights Reserved.
+          © 2021 CodeAstrology. All Rights Reserved.
         </p>
         <div class="footer-bottom__accept">
           We Accept
@@ -496,7 +513,6 @@
         </div>
       </div>
     </div>
-
   </footer>
 
 

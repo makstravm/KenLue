@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Marcho</title>
+  <title>KenLue</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -12,24 +12,52 @@
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        <a class="logo" href="#"><img class="logo__img" src="images/logo.png" alt="logo"></a>
+        <a class="logo" href="#"><img class="logo__img" src="images/logo.svg" alt="logo"></a>
         <nav class="menu">
           <button class="menu__btn"><span></span></button>
           <ul class="menu__list">
             <li class="menu__list-item">
-              <a class="menu__list-link menu__list-link--active" href="#">HOME</a>
+              <a class="menu__list-link menu__list-link--active" href="index.html">Главная</a>
+            </li>
+            <li class="menu__list-item menu__list-item--catalog">
+              <a class="menu__list-link" href="shop.html">Каталог</a>
+              <ul class="menu__list-catalog">
+                <li class="menu__catalog-list">
+                  <a class="menu__catalog-link" href="#">
+                    Женская мода
+                  </a>
+                </li>
+                <li class="menu__catalog-list">
+                  <a class="menu__catalog-link" href="#">
+                    Мужская мода
+                  </a>
+                </li>
+                <li class="menu__catalog-list">
+                  <a class="menu__catalog-link" href="#">
+                    Одежда & аксессуары
+                  </a>
+                </li>
+                <li class="menu__catalog-list">
+                  <a class="menu__catalog-link" href="#">
+                    Обувь & украшения
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">SHOP</a>
+              <a class="menu__list-link" href="blog.html">
+                Блог
+              </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">PAGE</a>
+              <a class="menu__list-link" href="#">
+                О нас
+              </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">BLOG</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">CONTACT</a>
+              <a class="menu__list-link" href="contacts.html">
+                Контакты
+              </a>
             </li>
           </ul>
         </nav>
@@ -39,6 +67,7 @@
           </a>
           <a class="user-nav__link" href="#">
             <img class="user-nav__link-img" src="images/icons/search.svg" alt="user icon">
+            <input class="user-nav__input" type="text">
           </a>
           <a class="user-nav__link" href="#">
             <img class="user-nav__link-img" src="images/icons/heart.svg" alt="user icon">
