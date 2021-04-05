@@ -1368,7 +1368,8 @@ footer {
     left: 50%;
     background-color: $title;
     width: 1px;
-    height: 12px; transform: translate(-50%, -50%);
+    height: 12px;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -1541,6 +1542,9 @@ footer {
     path {
       fill: #ececec;
     }
+  }
+  &__content {
+    width: 100%;
   }
   &__content-top {
     display: flex;
@@ -1882,7 +1886,7 @@ footer {
     ul {
       list-style: none;
     }
-    ol{
+    ol {
       padding-left: 60px;
     }
     p {
